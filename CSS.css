@@ -1,0 +1,23 @@
+body{
+    background-color: green; 
+    color: white; 
+    border-color: greenyellow; 
+    margin: 10%;
+    
+}
+#Foto{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 10%;
+} 
+#Topo{
+    text-align: center; 
+    font-family: 'Rowdies', cursive;
+}
+#Descri{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: palevioletred;
+    border-radius: 25%;
+}
