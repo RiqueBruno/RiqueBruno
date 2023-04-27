@@ -25,6 +25,7 @@
 </div>
   
   ## Certificates / Certificados
-   <img align="center" height="80" widith="80" src="https://lh3.googleusercontent.com/roUPWyXhvthJ8MYDYmMBWDSARcm_eRojdOxrINZMk-_l8oCVtKuFobGajiB775zUyLo5f8UDdtTPGbOyYGy9DXrNrbKigRd9Q4U3_s6b3XWn-Myjwk7DsEHoEw14rr1rB1iYt05gbbFAiZUyVmQ97Ew2pfKAAkqmJnAzKT8z5smv3p6xCoxfOTiuA-Te9qhptC1iyeYmIbiCwA6hS6P-DMgJ4JMg8QQ137RQ-TP7suBriIiyLCJsSg1QrcoSS-seOzvXvLxHQhtrB4fBWTqz73764NHUps1W2etO8ozODF5tAJ5yAk7hL9dbTfAgReRuGPLwvrErortktqcjGzfcZA0MfeXDizd3EdEtmFUwmeSoc9b9N_Ml8G0yipx0wg3xqb31y194pB_PzpuDvFSbqtXQK0BwkmzNmGY7Vs2nCblv0I_kAUve1jsbKOtQSO3zNQ-7ChcFEj0pe9Lmh-uHqWF8fg3BKz2C7M4_GPdpc5xRep1HGTPJs-_Yscq_28G9MWsRj588mF2ZFvuuwtMSk3t28wxcThEHtchw_9QX0t47J7ZatVRniNIgqxgXZrdf9whHOudLomEPxA3eExxPbsShwW0U3ycwKUQB0s7lQCjp8piKwHsyhS7evJ_V0iLRPLcejvmjLG1mFFowek-upL9UiitzolJXA9Smg5oc9fxAOCg9w8tOilzWB1C8bM-iF0SEdLHALdwYW-In2CeFqsVbk59kHja06RB_83G6k5hh6V2R2XC1aMgq5p4fur93N6RnRaRruB6nyhhdBpwEs-lZiU6_Qrfllar0-Gmdp2pisVDud9T_CZ-cVOaRHowHJ71TtjUaJx7_SptGu3ul_wxYxXDkd8QsFiH6cnVolHYtGB6Whb9li6Ql4FlwyCUfaz6NEw75UIFvTJmjHG7J_yFDXxLO41tMWr7CjtdEWZn3eULcnQ=w500-h500-s-no?authuser=0" />
+  <div style="display: inline_block">
+   <img align="center" height="40" widith="80" src="https://theme.zdassets.com/theme_assets/9633455/ecf228e8c15da1a8bd07f574e675a0ac59330968.png" />
   <img align="center" height="30" widith="40" src="https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white" />
-  
+  </div>
