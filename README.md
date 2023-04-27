@@ -1,7 +1,7 @@
 ## Olá! Eu sou Bruno H. Cardoso!
 
 - 👨‍💻 Estudando Desenvolvimento Web na Trybe / Studying Web Development at Trybe
-- 👦🏽 Pronouns: Ele/Dele / He/His
+- 👦🏽 Pronouns: Ele/Dele / He/Him
 
 ##
 
