@@ -29,5 +29,7 @@
     <a href="https://www.credential.net/profile/brunohenriquecardoso922841/wallet">
    <img align="center" height="40" widith="80" src="https://theme.zdassets.com/theme_assets/9633455/ecf228e8c15da1a8bd07f574e675a0ac59330968.png" />
     </a>
+    <a href="https://www.notion.so/aee907d3ade743648a02fe25af321850?v=bc1836f17f494149bdc81d3d73c0655d">
   <img align="center" height="30" widith="40" src="https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white" />
+    </a>
   </div>
