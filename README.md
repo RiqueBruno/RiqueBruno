@@ -33,3 +33,9 @@
   <img align="center" height="30" widith="40" src="https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white" />
     </a>
   </div>
+  
+  ## Contacts / Contatos
+  <div style="display: inline_block">
+  <img align="center" height="30" widith="40" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <img align="center" height="30" widith="40" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+</div>
