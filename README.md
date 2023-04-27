@@ -20,7 +20,6 @@
   <img align="center" height="30" widith="40" src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white" />
   <img align="center" height="30" widith="40" src="https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white" />
     <img align="center" height="30" widith="40" src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white" />
-  <img align="center" height="30" widith="40" src="https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white" />
 </div>
   
   ## Certificates / Certificados
