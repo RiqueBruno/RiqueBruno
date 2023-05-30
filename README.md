@@ -4,11 +4,10 @@
 - 👦🏽 Pronouns: Ele/Dele / He/Him
 
 ##
-
-<div>
-  <a href="https://www.linkedin.com/in/bruno-h-cardoso/">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RiqueBruno&theme=cobalt&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RiqueBruno&layout=compact&theme=cobalt" />
+  
+  <div>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RiqueBruno&theme=merko&count_private=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RiqueBruno&layout=compact&theme=merko" />
 </div>
   
   ##
