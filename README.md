@@ -2,6 +2,7 @@
 
 - 👨‍💻 Estudando Desenvolvimento Web na Trybe / Studying Web Development at Trybe
 - 👦🏽 Pronouns: Ele/Dele / He/Him
+-  Email: riquebruno@yahoo.com.br
 
 ##
   
