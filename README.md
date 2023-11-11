@@ -1,8 +1,9 @@
 ## Olá! Eu sou Bruno H. Cardoso!
 
-- 👨‍💻 Estudando Desenvolvimento Web na Trybe / Studying Web Development at Trybe
+- 👨‍💻 Desenvolvedor Web / Web Development
 - 👦🏽 Pronouns: Ele/Dele / He/Him
 -  Email: riquebruno@yahoo.com.br
+-  Linkedin: <a>linkedin.com/in/bruno-h-cardoso/</a>
 
 ##
   
