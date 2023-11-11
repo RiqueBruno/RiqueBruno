@@ -1,4 +1,4 @@
-## Olá! Eu sou Bruno H. Cardoso!
+Olá! 👋 Sou Bruno, um entusiasta de tecnologia e desenvolvedor web júnior em busca de desafios empolgantes para impulsionar minha carreira. Com sólida formação em Desenvolvimento web na Trybe, estou dedicado a transformar códigos em soluções incríveis.
 
 - 👨‍💻 Desenvolvedor Web / Web Development
 - 👦🏽 Pronouns: Ele/Dele / He/Him
