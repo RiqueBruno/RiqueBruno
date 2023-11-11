@@ -3,7 +3,7 @@
 - 👨‍💻 Desenvolvedor Web / Web Development
 - 👦🏽 Pronouns: Ele/Dele / He/Him
 -  Email: riquebruno@yahoo.com.br
--  Linkedin: <a>linkedin.com/in/bruno-h-cardoso/</a>
+-  Linkedin: <a href="https://www.linkedin.com/in/bruno-h-cardoso/">bruno-h-cardoso</a>
 
 ##
   
