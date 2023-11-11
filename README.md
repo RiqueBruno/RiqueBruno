@@ -1,4 +1,4 @@
-Olá! 👋 Sou Bruno, um entusiasta de tecnologia e desenvolvedor web júnior em busca de desafios empolgantes para impulsionar minha carreira. Com sólida formação em Desenvolvimento web na Trybe, estou dedicado a transformar códigos em soluções incríveis.
+Olá! 👋 Sou <strong>Bruno</strong>, um entusiasta de tecnologia e desenvolvedor web júnior em busca de desafios empolgantes para impulsionar minha carreira. Com sólida formação em Desenvolvimento web na Trybe, estou dedicado a transformar códigos em soluções incríveis.
 
 - 👨‍💻 Desenvolvedor Web / Web Development
 - 👦🏽 Pronouns: Ele/Dele / He/Him
@@ -26,16 +26,9 @@ Olá! 👋 Sou Bruno, um entusiasta de tecnologia e desenvolvedor web júnior em
   ## Certificates / Certificados
   <div style="display: inline_block">
     <a href="https://www.credential.net/profile/brunohenriquecardoso922841/wallet">
-   <img align="center" height="40" widith="80" src="https://theme.zdassets.com/theme_assets/9633455/ecf228e8c15da1a8bd07f574e675a0ac59330968.png" />
+      <img align="center" height="40" widith="80" src="https://theme.zdassets.com/theme_assets/9633455/ecf228e8c15da1a8bd07f574e675a0ac59330968.png" />
     </a>
     <a href="https://www.notion.so/aee907d3ade743648a02fe25af321850?v=bc1836f17f494149bdc81d3d73c0655d">
-  <img align="center" height="30" widith="40" src="https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white" />
+      <img align="center" height="30" widith="40" src="https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white" />
     </a>
   </div>
-  
-  ## Contacts / Contatos
-  <div style="display: inline_block">
-  <a href="https://www.linkedin.com/in/bruno-h-cardoso/">
-  <img align="center" height="30" widith="40" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-</div>
