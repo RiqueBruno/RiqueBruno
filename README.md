@@ -1,3 +1,7 @@
+<p align="left">
+      <img src="https://komarev.com/ghpvc/?username=RiqueBruno&label=Visitas">
+</p>
+
 <div bgcolor='blue' align='center'>
   <img  src='https://i.ibb.co/my5qxbq/chibi-20231113-212411-1.png' alt='github' height='150' margin='0'>
   <img  src='https://www.pngkey.com/png/full/61-612671_chibi-straw-hat-pirates-by-sergiart-one-piece.png' alt='github' height='200' margin='0'>
