@@ -1,10 +1,15 @@
+<kbd margin='0' align='center'>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=3DF731&random=false&width=435&lines=Ol%C3%A1!+Sou+Bruno!" alt="Typing SVG" />
+  </a>
+</kbd>
 <div bgcolor='blue' align='center'>
-  <img  src='https://i.ibb.co/my5qxbq/chibi-20231113-212411-1.png' alt='github' height='150' margin='0'>
+  <img  src='https://i.ibb.co/ZfBs5Ly/chibi-3.png' height='200' margin='0'>
   <img  src='https://www.pngkey.com/png/full/61-612671_chibi-straw-hat-pirates-by-sergiart-one-piece.png' alt='github' height='200' margin='0'>
 </div>
 <br>
 
-<p align="center"> Olá! 👋 Sou <strong>Bruno</strong>, um entusiasta de tecnologia e desenvolvedor web júnior em busca de desafios empolgantes para impulsionar minha carreira. Com sólida formação em Desenvolvimento web na Trybe, estou dedicado a transformar códigos em soluções incríveis. </p>
+<p align="center"> um entusiasta de tecnologia e desenvolvedor web júnior em busca de desafios empolgantes para impulsionar minha carreira. Com sólida formação em Desenvolvimento web na Trybe, estou dedicado a transformar códigos em soluções incríveis. </p>
 
 - 👨‍💻 Desenvolvedor Web / Web Development
 - 👦🏽 Pronouns: Ele/Dele / He/Him
