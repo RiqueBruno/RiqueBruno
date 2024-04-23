@@ -1,11 +1,5 @@
-<kbd margin='0' align='center'>
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=3DF731&random=false&width=435&lines=Ol%C3%A1!+Sou+Bruno," alt="Typing SVG" />
-  </a>
-</kbd>
 <div bgcolor='blue' align='center'>
-  <img  src='https://i.ibb.co/ZfBs5Ly/chibi-3.png' height='200' margin='0'>
-  <img  src='https://www.pngkey.com/png/full/61-612671_chibi-straw-hat-pirates-by-sergiart-one-piece.png' alt='github' height='200' margin='0'>
+  <img src='https://lh3.googleusercontent.com/pw/AP1GczO1xVJpVYSD-LOTnYH0XE6fS7t8ZUR5d2Jyo2f5xI5wCgExV2RTmuQy5LxRpT6izAuTuwJFMBxkIApO9MqFmhx1urXdTyPcqAioIzMK7stfdUtqOATAeHcfkE9JwSsvfH0TwyYxNCrYOAvA-dg2V23gMD7TJbZmBqG15ypoCOjc3V9oP_1P7LUKKiqJcKBO9i4kgngPLXnwpFoG_6BBpjl2w44E37TxtKuTpZTHXwJBlU8Zf84mbFPYL-DJMyL2VKLXkxVPsGb2PMjSaMsesgquWKmE2Uv_X0IWLt7l4hEZsCeWb1Qyuvyi0ucywMrJMaZIjrO5BPM7FkkylPb9LezpodMkK0oVWi3llbZzSRzFhrvoMJ5IMjjdLYjfmSe3Q9P9oBdp0MKlAwcZt5h50YFmJouXOudIk5cqSoHf15RSNwFqazdiigGe9vXp6AqHpiU58SQVZFh8uZlSWMi5MHLh-f6vJViRrqZPpPfXV4IodYC3Qaw4wfyvttPoRWY557Mz3IlwTC4qqyp11HO56go8CPNlYiTDwY50aoU32ChEKSH8MioknzXJbHjkxEuE-wTvSjVY_P6o-5PDSoC3Hs8O0CmsbffWanIVBfvWUvigqq2LkUTNd8SoyEZ3WJHiub40M9OP5VGc2n34nt88FYBYbg9m1bnZWp15JUIrTXz-sPu1Qhd2QJAOlhzKpo4moIeX5ZodAeblZhTaFeAtkOTKlzPbHexi04s16RRt-Cgo8FqupD9KUycvppwGkbr1ldtjCEv_KcYPqUw4GbwoKSYczaGhoZYr4Ds9q8Xax_ySsE4Y9VLVP1NUkAr1Uf7i_7BExR8QbbvRpsc-cByY6FUGqnXBTE6Ew4meHGPYVOumspXryVIf91hG__7936jgUlUs07Uvtm3vDYGL06CZOfvUVQ=w1024-h409-s-no-gm?authuser=0'>
 </div>
 <br>
 
