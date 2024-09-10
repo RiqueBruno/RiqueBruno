@@ -3,7 +3,7 @@
 </div>
 <br>
 
-<p align="center"> um entusiasta de tecnologia e desenvolvedor web júnior em busca de desafios empolgantes para impulsionar minha carreira. Com sólida formação em Desenvolvimento web na Trybe, estou dedicado a transformar códigos em soluções incríveis. </p>
+<p align="center"> um entusiasta de tecnologia, desenvolvedor web júnior e estudante de UX Design em busca de desafios empolgantes para impulsionar minha carreira. Com sólida formação em Desenvolvimento web na Trybe, estou dedicado a transformar códigos em soluções incríveis. </p>
 
 - 👨‍💻 Desenvolvedor Web / Web Development
 - 👦🏽 Pronouns: Ele/Dele / He/Him
@@ -13,7 +13,6 @@
 ##
   
   <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RiqueBruno&theme=merko&count_private=true" />
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RiqueBruno&layout=compact&theme=merko" />
 </div>
 
