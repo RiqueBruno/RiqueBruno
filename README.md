@@ -1,5 +1,5 @@
 <div bgcolor='blue' align='center'>
-  <img src='image/cab.png'>
+  <img src='public/cab.png'>
 </div>
 <br>
 
@@ -7,16 +7,17 @@
 
 - 👨‍💻 Desenvolvedor Web / Web Development
 - 👦🏽 Pronouns: Ele/Dele / He/Him
--  Email: riquebrunotrabalhos@gmail.com
--  Linkedin: <a href="https://www.linkedin.com/in/bruno-h-cardoso/">bruno-h-cardoso</a>
+- Email: riquebrunotrabalhos@gmail.com
+- Linkedin: <a href="https://www.linkedin.com/in/bruno-h-cardoso/">bruno-h-cardoso</a>
 
 ##
-  
+
   <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RiqueBruno&layout=compact&theme=merko" />
 </div>
 
 ##
+
  <h2 align="center">🏴‍☠️ Habilidades & Ferramentas 🏴‍☠️</h2>
 <p align="center">
   <a href="https://skillicons.dev">
@@ -28,6 +29,7 @@
 <br>
 
 ##
+
  <h2 align="center">📜 Certificates / Certificados 📜</h2>
   <div style="display: inline_block" align="center">
     -----
