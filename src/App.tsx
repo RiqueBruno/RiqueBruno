@@ -1,7 +1,19 @@
+import { useState } from 'react';
+
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
+  const handleThemeChange = () => {
+    setDarkMode(!darkMode);
+  };
   return (
-    <div className="bg-red-500 min-h-screen flex items-center justify-center">
-      <h1 className="text-white text-3xl font-bold">Testando Tailwind</h1>
+    <div className={`${darkMode && 'dark'}`}>
+      <main className="dark:bg-blue-400 bg-white">
+        <h1 className="dark:text-black bg-pink-400 dark:bg-yellow-300">
+          Testando Tailwind
+        </h1>
+        <button onClick={handleThemeChange}>trocar tema</button>
+      </main>
     </div>
   );
 }
