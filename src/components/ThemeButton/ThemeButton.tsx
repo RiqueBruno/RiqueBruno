@@ -9,7 +9,7 @@ function ThemeButton({ darkMode, handleThemeChange }: ThemeButtonProps) {
   return (
     <button
       onClick={handleThemeChange}
-      className="h-20 w-20 rounded-full flex items-center justify-center bg-link p-4"
+      className="h-10 w-10 rounded-full flex items-center justify-center bg-link p-2"
     >
       {darkMode ? (
         <svg
