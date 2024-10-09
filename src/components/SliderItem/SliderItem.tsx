@@ -7,8 +7,11 @@ type SliderItemProps = {
 
 export default function SliderItem({ slider, delay }: SliderItemProps) {
   return (
-    <span
-      className={`animate-slider delay-[${delay}s] text-text-light`}
-    >{`/ ${slider} `}</span>
+    <div
+      style={{ animationDelay: `${delay}s` }}
+      className="animate-slider text-text-light h-full flex items-center justify-center absolute left-[100%] w-44"
+    >
+      {'/'} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {slider}
+    </div>
   );
 }
