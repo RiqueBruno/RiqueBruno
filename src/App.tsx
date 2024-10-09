@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ThemeButton from './components/ThemeButton/ThemeButton';
+import Header from './components/Header/Header';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -11,9 +11,9 @@ function App() {
   /**
   Criar componentes
     Header
-      - Logo
-      - Nav (Desktop e Mobile)
-      - Botão de trocar tema
+      - Logo Ok
+      - Nav (Desktop e Mobile) OK
+      - Botão de trocar tema OK
     Main
       Home
         - Fundo animado
@@ -40,14 +40,8 @@ function App() {
   */
   return (
     <div className={`${darkMode && 'dark'}`}>
-      <main className="dark:bg-blue-400 bg-white">
-        <h1 className="dark:text-black bg-pink-400 dark:bg-yellow-300">
-          Testando Tailwind
-        </h1>
-        <ThemeButton
-          darkMode={darkMode}
-          handleThemeChange={handleThemeChange}
-        />
+      <main className="dark:bg-background-dark bg-background-light h-full">
+        <Header darkMode={darkMode} handleThemeChange={handleThemeChange} />
       </main>
     </div>
   );
