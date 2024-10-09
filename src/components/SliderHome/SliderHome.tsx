@@ -13,7 +13,7 @@ export default function SliderHome() {
     'Fullstack Developer',
   ];
   return (
-    <div className="w-full h-10 bg-primary relative box-border overflow-hidden hidden md:block">
+    <div className="w-full h-10 bg-primary relative box-border overflow-hidden hidden md:block z-10">
       {slider.map((slider, index) => (
         <SliderItem key={index} slider={slider} delay={index * 4} />
       ))}
