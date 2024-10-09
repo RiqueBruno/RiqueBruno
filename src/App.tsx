@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -42,6 +43,7 @@ function App() {
     <div className={`${darkMode && 'dark'}`}>
       <main className="dark:bg-background-dark bg-background-light h-full">
         <Header darkMode={darkMode} handleThemeChange={handleThemeChange} />
+        <Home />
       </main>
     </div>
   );
