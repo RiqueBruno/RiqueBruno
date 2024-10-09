@@ -1,0 +1,18 @@
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  overflow: hidden;
+}
+
+.background div {
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 60;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
