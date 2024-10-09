@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ThemeButton from '../ThemeButton/ThemeButton';
 
 type MenuProps = {
@@ -7,6 +7,7 @@ type MenuProps = {
   ulClassName: string;
   liClassName: string;
   aClassName: string;
+  handlerCloseMenu: () => void;
 };
 
 export default function Menu({
@@ -15,34 +16,36 @@ export default function Menu({
   ulClassName,
   liClassName,
   aClassName,
+  handlerCloseMenu,
 }: MenuProps) {
+  const [activeLink, setActiveLink] = useState<string | null>('home');
+
+  const handleClick = (id: string) => {
+    setActiveLink(id);
+    handlerCloseMenu();
+  };
+
   return (
     <ul className={ulClassName}>
-      <li className={liClassName}>
-        <a className={aClassName} href="#home">
-          Home
-        </a>
-      </li>
-      <li className={liClassName}>
-        <a className={aClassName} href="#about">
-          About
-        </a>
-      </li>
-      <li className={liClassName}>
-        <a className={aClassName} href="#projects">
-          Projects
-        </a>
-      </li>
-      <li className={liClassName}>
-        <a className={aClassName} href="#skills">
-          Skills
-        </a>
-      </li>
-      <li className={liClassName}>
-        <a className={aClassName} href="#contact">
-          Contact
-        </a>
-      </li>
+      {[
+        { id: 'home', label: 'Home' },
+        { id: 'about', label: 'About' },
+        { id: 'projects', label: 'Projects' },
+        { id: 'skills', label: 'Skills' },
+        { id: 'contact', label: 'Contact' },
+      ].map((item) => (
+        <li key={item.id} className={liClassName}>
+          <a
+            href={`#${item.id}`}
+            className={`${aClassName} ${
+              activeLink === item.id ? 'text-primary' : ''
+            }`}
+            onClick={() => handleClick(item.id)}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
       <li className={liClassName}>
         <ThemeButton
           darkMode={darkMode}
