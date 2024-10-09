@@ -3,7 +3,17 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        slider: 'slider 10s linear infinite',
+      },
+      keyframes: {
+        slider: {
+          '0%': { right: '100%' },
+          '100%': { left: '-50px' },
+        },
+      },
+    },
     colors: {
       primary: {
         light: '#E24AC6',
