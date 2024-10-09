@@ -5,12 +5,12 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        slider: 'slider 10s linear infinite',
+        slider: 'slider 32s linear infinite',
       },
       keyframes: {
         slider: {
-          '0%': { right: '100%' },
-          '100%': { left: '-50px' },
+          from: { left: '100%' },
+          to: { left: '-190px' },
         },
       },
     },
