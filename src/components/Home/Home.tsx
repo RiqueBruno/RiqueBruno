@@ -12,6 +12,7 @@ export default function Home() {
       <button>Conheça meu trabalho</button>
       <button>Entre em contato</button>
       <SliderHome />
+      <BgHome />
     </section>
   );
 }
