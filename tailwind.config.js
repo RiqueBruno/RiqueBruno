@@ -33,6 +33,7 @@ module.exports = {
       },
       white: '#ffffff',
       black: '#000000',
+      transparent: 'rgba(94, 88, 88, 0.19)',
     },
   },
   plugins: [],
