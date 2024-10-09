@@ -4,7 +4,7 @@ import BgHome from '../BgHome/BgHome';
 
 export default function Home() {
   return (
-    <section className="dark:text-text-dark h-screen pt-24 w-full">
+    <section className="dark:text-text-dark h-screen pt-24 w-full relative">
       <h1>Olá, eu sou o Bruno</h1>
       <h2>Desenvolvedor Front-end</h2>
       <h3>
