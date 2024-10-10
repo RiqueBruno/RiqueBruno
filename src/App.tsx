@@ -17,10 +17,10 @@ function App() {
       - Botão de trocar tema OK
     Main
       Home
-        - Fundo animado
+        - Fundo animado OK
         - Titulo (niveis h1, h2, h3)
         - Avatar animado
-        - Barra com texto animado
+        - Barra com texto animado OK
         - Botões de redes sociais
       About
         - Paragrafo
