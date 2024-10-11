@@ -43,7 +43,7 @@ function App() {
     <div className={`${darkMode && 'dark'}`}>
       <main className="dark:bg-background-dark bg-background-light h-full">
         <Header darkMode={darkMode} handleThemeChange={handleThemeChange} />
-        <Home />
+        <Home darkMode={darkMode} />
       </main>
     </div>
   );
