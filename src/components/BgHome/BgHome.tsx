@@ -12,10 +12,12 @@ export default function BgHome() {
   }
 
   const divStyles = Array.from({ length: 16 }, () => ({
-    color: ['#581937', '#e45a84', '#fa00c4'][Math.floor(Math.random() * 3)],
+    color: ['#581937a5', '#e45a83c3', '#fa00c498'][
+      Math.floor(Math.random() * 3)
+    ],
     top: `${getRandomInRange(10, 60)}%`,
     left: `${getRandomInRange(0, 98)}%`,
-    animationDuration: `${getRandomInRange(20, 50)}s`,
+    animationDuration: `${getRandomInRange(50, 60)}s`,
     animationDelay: `-${getRandomInRange(10, 50)}s`,
     transformOrigin: `${getRandomInRange(-30, 30)}vw ${getRandomInRange(
       -30,
@@ -26,7 +28,7 @@ export default function BgHome() {
       6
     )}vmin currentColor`,
     size: `${getRandomNumber()}rem`,
-    rounded: `${getRandomInRange(14, 50)}%`,
+    rounded: `${getRandomInRange(4, 50)}%`,
   }));
 
   return (
