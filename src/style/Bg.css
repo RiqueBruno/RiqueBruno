@@ -16,3 +16,11 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+.gradient-true {
+  background: radial-gradient(circle, #bb01a2 15%, rgba(255, 0, 0, 0) 73%);
+}
+
+.gradient-false {
+  background: radial-gradient(circle, #640157 12%, rgba(255, 0, 0, 0) 60%);
+}
