@@ -1,5 +1,6 @@
 import React from 'react';
 import brunoImage from '../../assets/images/foto.jpg';
+import LinkMenu from '../LinkMenu/LinkMenu';
 
 export default function About() {
   return (
@@ -13,6 +14,7 @@ export default function About() {
           />
         </div>
         <div>
+          <LinkMenu text="Sobre mim" emote="👨‍💻" />
           <h2></h2>
           <p></p>
         </div>
