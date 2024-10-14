@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import About from './components/About/About';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -18,10 +19,10 @@ function App() {
     Main
       Home
         - Fundo animado OK
-        - Titulo (niveis h1, h2, h3)
-        - Avatar animado
+        - Titulo (niveis h1, h2, h3) OK
+        - Avatar animado OK
         - Barra com texto animado OK
-        - Botões de redes sociais
+        - Botões de redes sociais OK
       About
         - Paragrafo
         - Botão download curriculo
@@ -44,6 +45,7 @@ function App() {
       <main className="dark:bg-background-dark bg-background-light h-full">
         <Header darkMode={darkMode} handleThemeChange={handleThemeChange} />
         <Home darkMode={darkMode} />
+        <About />
       </main>
     </div>
   );
