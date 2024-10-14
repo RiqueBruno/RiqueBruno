@@ -10,7 +10,7 @@ type AvatarHomeProps = {
 export default function AvatarHome({ darkMode }: AvatarHomeProps) {
   return (
     <div
-      className={`gradient-${darkMode} w-full h-full relative flex items-center justify-center rounded-full p-4`}
+      className={`gradient-${darkMode} w-full h-full relative lg:flex items-center justify-center rounded-full p-4 hidden`}
     >
       <div className="absolute z-30 dark:bg-transparent bg-secondary-light h-16 w-16 flex items-center justify-center rounded-md left-0 top-20">
         <TechIcon
