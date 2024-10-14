@@ -32,7 +32,7 @@ export default function BgHome() {
   }));
 
   return (
-    <div className="h-full w-full absolute left-0 top-0 background z-0 md:block hidden">
+    <div className="h-full w-full absolute left-0 top-0 background z-0">
       {divStyles.map((style, index) => (
         <div
           key={index}
