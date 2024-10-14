@@ -1,6 +1,14 @@
 import React from 'react';
 import { IconType } from 'react-icons';
-import { FaReact, FaNodeJs, FaDocker, FaGit, FaGithub } from 'react-icons/fa';
+import {
+  FaReact,
+  FaNodeJs,
+  FaDocker,
+  FaGit,
+  FaGithub,
+  FaLinkedin,
+  FaWhatsapp,
+} from 'react-icons/fa';
 import {
   SiJavascript,
   SiTypescript,
@@ -33,7 +41,9 @@ type TechName =
   | 'Postman'
   | 'Redux'
   | 'SASS'
-  | 'Github';
+  | 'Github'
+  | 'Linkedin'
+  | 'Whatsapp';
 
 const iconMap: Record<TechName, IconType> = {
   JavaScript: SiJavascript,
@@ -55,6 +65,8 @@ const iconMap: Record<TechName, IconType> = {
   Redux: SiRedux,
   SASS: DiSass,
   Github: FaGithub,
+  Linkedin: FaLinkedin,
+  Whatsapp: FaWhatsapp,
 };
 
 interface TechIconProps {
