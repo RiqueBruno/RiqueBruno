@@ -6,6 +6,7 @@ type SocialMediaProps = {
   size: number;
   location: 'home' | 'footer';
   linkTo: string;
+  darkMode: boolean;
 };
 
 export default function SocialMedia({
@@ -13,6 +14,7 @@ export default function SocialMedia({
   size,
   location,
   linkTo,
+  darkMode,
 }: SocialMediaProps) {
   return (
     <a
@@ -21,7 +23,11 @@ export default function SocialMedia({
         location === 'home' ? 'bg-primary' : 'bg-secondary'
       } rounded-full w-12 h-12 flex justify-center items-center dark:hover:bg-text-dark hover:bg-text-light transition-all`}
     >
-      <TechIcon name={type} size={size} color="#500742" />
+      <TechIcon
+        name={type}
+        size={size}
+        color={darkMode ? '#500742' : 'white'}
+      />
     </a>
   );
 }
