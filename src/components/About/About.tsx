@@ -15,7 +15,7 @@ export default function About() {
         </div>
         <div>
           <LinkMenu text="Sobre mim" emote="👨‍💻" />
-          <h2></h2>
+          <h2>Construindo o futuro, uma linha de código por vez.</h2>
           <p></p>
         </div>
       </div>
