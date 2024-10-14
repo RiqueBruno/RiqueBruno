@@ -3,6 +3,8 @@ import SliderHome from '../SliderHome/SliderHome';
 import BgHome from '../BgHome/BgHome';
 import AvatarHome from '../AvatarHome/AvatarHome';
 import LinkMenu from '../LinkMenu/LinkMenu';
+import brunoImage from '../../assets/images/foto.jpg';
+import SocialMedia from '../SocialMedia/SocialMedia';
 
 type HomeProps = {
   darkMode: boolean;
@@ -10,25 +12,47 @@ type HomeProps = {
 
 export default function Home({ darkMode }: HomeProps) {
   return (
-    <section className="dark:text-text-dark h-[calc(100vh-5rem)] pt-24 w-full relative">
-      <div className="grid grid-cols-2 w-full h-full z-40 pb-20">
-        <div className="flex flex-col justify-center items-start space-y-4 pl-24 dark:text-text-dark text-text-light">
+    <section className="dark:text-text-dark lg:h-[calc(100vh-5rem)] pt-44 lg:pt-24 w-full relative overflow-hidden lg:overflow-auto">
+      <div className="lg:grid lg:grid-cols-2 w-full h-full z-40 pb-20 flex flex-col items-center justify-center">
+        <div className="flex flex-col justify-center items-center lg:items-start space-y-4 lg:pl-24 dark:text-text-dark text-text-light">
+          <div className="lg:hidden rounded-full overflow-hidden h-52 w-52 border-2 border-primary z-50 shadow-md">
+            <img
+              src={brunoImage}
+              alt="Imagem de Bruno"
+              className="lg:hidden w-full h-full object-cover"
+            />
+          </div>
           <LinkMenu text="Saudações!" emote="👋" />
-          <h1 className="text-5xl font-bold">
-            Bruno
-            <br />
+          <h1 className="lg:text-5xl text-3xl font-bold z-[100]">
+            Bruno&nbsp;
+            <br className="hidden lg:block" />
             Henrique
           </h1>
-          <h2 className="text-2xl">Front-end developer · UI designer</h2>
-          <div className="space-x-4">
-            <button className="px-6 py-2 bg-blue-500 text-white rounded-md">
-              Conheça meu trabalho
-            </button>
-            <button className="px-6 py-2 bg-green-500 text-white rounded-md">
-              Entre em contato
-            </button>
+          <h2 className="lg:text-2xl text-lg z-[100]">
+            Front-end developer · UI designer
+          </h2>
+          <div className="lg:space-x-4 flex justify-around lg:justify-start lg:items-start lg:px-0 w-full px-10 z-[100]">
+            <SocialMedia
+              type="Linkedin"
+              size={30}
+              location="home"
+              linkTo="https://www.linkedin.com/in/brunohenriquec"
+            />
+            <SocialMedia
+              type="Github"
+              size={30}
+              location="home"
+              linkTo="https://github.com/RiqueBruno"
+            />
+            <SocialMedia
+              type="Whatsapp"
+              size={30}
+              location="home"
+              linkTo="https://wa.me/5521993457722"
+            />
           </div>
         </div>
+
         <div className="flex justify-center items-center">
           <div className="h-[28rem] w-[30rem]">
             <AvatarHome darkMode={darkMode} />
