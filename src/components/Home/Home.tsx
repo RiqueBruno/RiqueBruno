@@ -14,7 +14,7 @@ export default function Home({ darkMode }: HomeProps) {
   return (
     <section className="dark:text-text-dark h-[780px] lg:h-[calc(100vh-5rem)] md:h-[calc(100vh-8rem)] pt-[38rem] md:pt-20 lg:pt-24 w-full relative overflow-hidden lg:overflow-auto">
       <div className="lg:grid lg:grid-cols-2 w-full h-full z-40 pb-20 flex flex-col items-center justify-center">
-        <div className="flex flex-col justify-center items-center lg:items-start space-y-4 lg:pl-24 dark:text-text-dark text-text-light">
+        <div className="flex flex-col justify-center items-center lg:items-start space-y-4 lg:pl-60 dark:text-text-dark text-text-light">
           <div className="lg:hidden rounded-full overflow-hidden h-52 w-52 border-2 border-primary z-50 shadow-md">
             <img
               src={brunoImage}
@@ -33,18 +33,21 @@ export default function Home({ darkMode }: HomeProps) {
           </h2>
           <div className="lg:space-x-4 flex justify-around lg:justify-start lg:items-start lg:px-0 w-full px-10 z-[100]">
             <SocialMedia
+              darkMode={darkMode}
               type="Linkedin"
               size={30}
               location="home"
               linkTo="https://www.linkedin.com/in/brunohenriquec"
             />
             <SocialMedia
+              darkMode={darkMode}
               type="Github"
               size={30}
               location="home"
               linkTo="https://github.com/RiqueBruno"
             />
             <SocialMedia
+              darkMode={darkMode}
               type="Whatsapp"
               size={30}
               location="home"
