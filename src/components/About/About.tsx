@@ -4,19 +4,21 @@ import LinkMenu from '../LinkMenu/LinkMenu';
 
 export default function About() {
   return (
-    <section className="bg-primary flex flex-col justify-center items-center lg:flex-row p-10">
-      <div>
-        <div className="lg:block rounded-full overflow-hidden h-52 w-52 border-2 border-primary z-50 shadow-md">
+    <section className="bg-primary dark:bg-secondary-light relative flex flex-col lg:flex-row justify-center items-center p-10 h-screen">
+      <div className="lg:flex lg:flex-row lg:items-center lg:justify-around w-full lg:px-64">
+        <div className="hidden lg:block rounded-full overflow-hidden h-72 w-72 border-2 border-primary z-50 shadow-md">
           <img
             src={brunoImage}
             alt="Imagem de Bruno"
             className="lg:block w-full h-full object-cover"
           />
         </div>
-        <div>
-          <LinkMenu text="Sobre mim" emote="👨‍💻" />
-          <h2>Construindo o futuro, uma linha de código por vez.</h2>
-          <p>
+        <div className="flex flex-col items-center justify-center dark:text-text-dark text-text-light lg:items-start">
+          <LinkMenu text="Sobre mim" emote="👨‍💻" id="about" />
+          <h2 className="text-3xl my-8 w-full text-center">
+            Construindo o futuro, uma linha de código por vez.
+          </h2>
+          <p className="w-full text-center lg:text-start">
             <ul className="mt-4 space-y-2 text-base list-none">
               <li>
                 👋 Me chamo Bruno Henrique Cardoso, mas pode me chamar apenas de
@@ -38,6 +40,11 @@ export default function About() {
           </p>
         </div>
       </div>
+      <div className="absolute border-2 rounded-md h-80 w-80 bottom-10 right-10 z-0 opacity-15 lg:opacity-60 dark:border-primary border-secondary-light" />
+      <div className="absolute border-2 rounded-md h-40 w-40 bottom-60 right-72 z-0 opacity-15 lg:opacity-60 dark:border-primary border-secondary-light" />
+      <div className="absolute border-2 rounded-md h-20 w-20 top-20 right-20 z-0 opacity-15 lg:opacity-60 dark:border-primary border-secondary-light" />
+      <div className="absolute border-2 rounded-md h-40 w-40 top-48 left-60 z-0 opacity-15 lg:opacity-60 dark:border-primary border-secondary-light" />
+      <div className="absolute border-2 rounded-md h-80 w-80 top-0 left-0 z-0 opacity-15 lg:opacity-60 dark:border-primary border-secondary-light" />
     </section>
   );
 }
