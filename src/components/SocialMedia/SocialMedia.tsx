@@ -19,7 +19,7 @@ export default function SocialMedia({
       href={linkTo}
       className={`${
         location === 'home' ? 'bg-primary' : 'bg-secondary'
-      } rounded-full w-12 h-12 flex justify-center items-center`}
+      } rounded-full w-12 h-12 flex justify-center items-center dark:hover:bg-text-dark hover:bg-text-light transition-all`}
     >
       <TechIcon name={type} size={size} color="#500742" />
     </a>
