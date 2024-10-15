@@ -5,6 +5,7 @@ import About from './components/About/About';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
+  const [imageOpen, setImageOpen] = useState(false);
 
   const handleThemeChange = () => {
     setDarkMode(!darkMode);
