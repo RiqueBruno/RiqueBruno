@@ -7,6 +7,7 @@ type Project = {
   codeLink: string;
   designLink: string;
   image: string;
+  imagePreview?: string;
 };
 
 const projects: Project[] = [
@@ -21,6 +22,7 @@ const projects: Project[] = [
     designLink:
       'https://www.figma.com/design/0QmmjgyPvPlP8dJS48Zr0X/BasicShop?node-id=0-1',
     image: '../assets/mockup/basicShopMockup.png',
+    imagePreview: '../assets/mockup/basicShopMockupPreview.png',
   },
 ];
 
