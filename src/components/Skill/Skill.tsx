@@ -22,7 +22,7 @@ import {
 } from 'react-icons/si';
 import { DiSass, DiPhotoshop, DiIllustrator } from 'react-icons/di';
 
-type TechName =
+export type TechName =
   | 'JavaScript'
   | 'React'
   | 'Node'
