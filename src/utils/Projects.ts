@@ -1,3 +1,5 @@
+import { TechName } from '../components/Skill/Skill';
+
 type Project = {
   id: number;
   title: string;
@@ -7,7 +9,7 @@ type Project = {
   codeLink: string;
   designLink: string;
   image: string;
-  imagePreview?: string;
+  imagePreview: string;
 };
 
 const projects: Project[] = [
