@@ -2,7 +2,7 @@ type Project = {
   id: number;
   title: string;
   description: string;
-  skills: string[];
+  skills: TechName[];
   deployLink: string;
   codeLink: string;
   designLink: string;
