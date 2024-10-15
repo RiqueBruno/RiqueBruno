@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import ProjectsList from './components/ProjectsList/ProjectsList';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -47,6 +48,7 @@ function App() {
         <Header darkMode={darkMode} handleThemeChange={handleThemeChange} />
         <Home darkMode={darkMode} />
         <About />
+        <ProjectsList imageOpen={imageOpen} setImageOpen={setImageOpen} />
       </main>
     </div>
   );
