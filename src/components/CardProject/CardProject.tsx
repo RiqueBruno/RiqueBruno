@@ -12,6 +12,8 @@ type ProjectProps = {
   designLink: string;
   image: string;
   imagePreview: string;
+  imageOpen: boolean;
+  setImageOpen: (imageOpen: boolean) => void;
 };
 
 export default function CardProject({
@@ -22,6 +24,9 @@ export default function CardProject({
   codeLink,
   designLink,
   image,
+  imagePreview,
+  imageOpen,
+  setImageOpen,
 }: ProjectProps) {
   return (
     <article>
@@ -47,7 +52,9 @@ export default function CardProject({
         </div>
       </div>
       <div>
-        <ImagePreview image={image} setImageOpen={} imageOpen={} />
+        {imageOpen && (
+          <ImagePreview image={imagePreview} setImageOpen={setImageOpen} />
+        )}
         <img src={image} alt={title} />
       </div>
     </article>
