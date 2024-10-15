@@ -24,8 +24,8 @@ function App() {
         - Barra com texto animado OK
         - Botões de redes sociais OK
       About
-        - Paragrafo
-        - Botão download curriculo
+        - Paragrafo OK
+        - Botão download curriculo - DEPOIS
       Projects
         - Card de projetos
           + Imagem Mockup
