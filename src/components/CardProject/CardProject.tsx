@@ -1,6 +1,7 @@
 import React from 'react';
 import TechIcon from '../Skill/Skill';
 import { TechName } from '../Skill/Skill';
+import ImagePreview from '../ImagePreview/ImagePreview';
 
 type ProjectProps = {
   title: string;
@@ -46,6 +47,7 @@ export default function CardProject({
         </div>
       </div>
       <div>
+        <ImagePreview image={image} setImageOpen={} imageOpen={} />
         <img src={image} alt={title} />
       </div>
     </article>
