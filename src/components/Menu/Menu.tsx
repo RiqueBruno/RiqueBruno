@@ -29,10 +29,10 @@ export default function Menu({
     <ul className={ulClassName}>
       {[
         { id: 'home', label: 'Home' },
-        { id: 'about', label: 'About' },
-        { id: 'projects', label: 'Projects' },
+        { id: 'about', label: 'Sobre' },
+        { id: 'projects', label: 'Projetos' },
         { id: 'skills', label: 'Skills' },
-        { id: 'contact', label: 'Contact' },
+        { id: 'contact', label: 'Contato' },
       ].map((item) => (
         <li key={item.id} className={liClassName}>
           <a
