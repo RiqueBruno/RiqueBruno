@@ -41,6 +41,14 @@ module.exports = {
         DEFAULT: '#2F1F2E',
         dark: '#2F1F2E',
       },
+      card: {
+        light: '#281404bc',
+        dark: '#6f446a8d',
+      },
+      hoverCard: {
+        light: '#3a1e06bc',
+        dark: '#a8359b8d',
+      },
       white: '#ffffff',
       black: '#000000',
       transparent: 'rgba(94, 88, 88, 0.19)',
