@@ -18,13 +18,13 @@ export default function ProjectsList({
   setProjectId,
 }: ProjectProps) {
   return (
-    <section className="h-screen w-screen relative flex flex-col items-start justify-center p-4">
+    <section className="h-screen w-screen relative flex flex-col items-start lg:items-center justify-center p-4">
       <div id="projects" className="absolute top-0 left-0" />
       <header className="w-full flex flex-col items-center justify-center dark:text-text-dark">
         <LinkMenu text="Projetos" id="" emote="🔗" />
         <h2 className="text-3xl my-8 w-full text-center">Meus Projetos</h2>
       </header>
-      <div className="h-[70%]">
+      <div className="h-[70%] lg:w-[80%] lg:flex lg:items-center lg:p-4 lg:rounded-lg">
         {projects.map((project) => (
           <CardProject
             key={project.id}
