@@ -18,7 +18,7 @@ const projects: Project[] = [
     id: 1,
     title: 'Basic Shop',
     description:
-      'Um e-commerce inspirado no site do Mercado Livre, desenvolvido com React, Tailwind CSS e TypeScript. Utilizando a API do Mercado Livre, o projeto permite a busca de produtos, categorização, adição de itens aos favoritos e ao carrinho. Com uma interface moderna e responsiva, oferece uma experiência de compra eficiente e intuitiva.',
+      'Um e-commerce inspirado no site do Mercado Livre. Utilizando a API do Mercado Livre, o projeto permite a busca de produtos, categorização, adição de itens aos favoritos e ao carrinho. Com uma interface moderna e responsiva, oferece uma experiência de compra eficiente e intuitiva.',
     skills: ['React', 'TypeScript', 'Tailwind'],
     deployLink: 'https://basic-shop-nine.vercel.app/',
     codeLink: 'https://github.com/RiqueBruno/basicShop',
