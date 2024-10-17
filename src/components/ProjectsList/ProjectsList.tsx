@@ -42,7 +42,7 @@ export default function ProjectsList({
         ))}
       </div>
       {imageOpen && (
-        <div className="bg-secondary-light h-[40%] lg:h-[80%] w-[80%] absolute top-56 lg:top-0 left-0 right-0 bottom-0 m-auto flex items-center justify-center z-[98] border-2 dark:border-primary-light rounded-md">
+        <div className="bg-secondary-light h-[40%] lg:h-[80%] w-[80%] absolute top-56 lg:top-0 left-0 right-0 bottom-0 m-auto flex items-center justify-center z-[98] border-2 border-text-light dark:border-primary-light rounded-md">
           <ImagePreview
             image={projects[projectId - 1].imagePreview}
             setImageOpen={setImageOpen}
