@@ -2,15 +2,20 @@ import React from 'react';
 import projects from '../../utils/Projects';
 import CardProject from '../CardProject/CardProject';
 import LinkMenu from '../LinkMenu/LinkMenu';
+import ImagePreview from '../ImagePreview/ImagePreview';
 
 type ProjectProps = {
   imageOpen: boolean;
   setImageOpen: (imageOpen: boolean) => void;
+  projectId: number;
+  setProjectId: (id: number) => void;
 };
 
 export default function ProjectsList({
   imageOpen,
   setImageOpen,
+  projectId,
+  setProjectId,
 }: ProjectProps) {
   return (
     <section className="h-screen w-screen relative flex flex-col items-start justify-center p-4">
@@ -23,7 +28,7 @@ export default function ProjectsList({
         {projects.map((project) => (
           <CardProject
             key={project.id}
-            imageOpen={imageOpen}
+            id={project.id}
             setImageOpen={setImageOpen}
             title={project.title}
             description={project.description}
@@ -32,10 +37,18 @@ export default function ProjectsList({
             codeLink={project.codeLink}
             designLink={project.designLink}
             image={project.image}
-            imagePreview={project.imagePreview}
+            setProjectId={setProjectId}
           />
         ))}
       </div>
+      {imageOpen && (
+        <div className="bg-secondary-light h-[40%] lg:h-[80%] w-[80%] absolute top-56 lg:top-0 left-0 right-0 bottom-0 m-auto flex items-center justify-center z-[98] border-2 dark:border-primary-light rounded-md">
+          <ImagePreview
+            image={projects[projectId - 1].imagePreview}
+            setImageOpen={setImageOpen}
+          />
+        </div>
+      )}
     </section>
   );
 }
