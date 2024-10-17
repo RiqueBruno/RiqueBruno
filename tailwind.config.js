@@ -50,6 +50,12 @@ module.exports = {
         light: '#3a1e06bc',
         dark: '#a8359b8d',
       },
+      btnCard: {
+        light: 'rgba(106, 85, 48, 0.19)',
+        lightHover: 'rgba(71, 55, 26, 0.3)',
+        dark: 'rgba(0, 0, 0, 0.45)',
+        darkHover: '#a8359b8d',
+      },
       white: '#ffffff',
       black: '#000000',
       transparent: 'rgba(94, 88, 88, 0.19)',
