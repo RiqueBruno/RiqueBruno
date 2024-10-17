@@ -19,13 +19,13 @@ const projects: Project[] = [
     title: 'Basic Shop',
     description:
       'Um e-commerce inspirado no site do Mercado Livre. Utilizando a API do Mercado Livre, o projeto permite a busca de produtos, categorização, adição de itens aos favoritos e ao carrinho. Com uma interface moderna e responsiva, oferece uma experiência de compra eficiente e intuitiva.',
-    skills: ['React', 'TypeScript', 'Tailwind'],
+    skills: ['React', 'TypeScript', 'Tailwind', 'Figma'],
     deployLink: 'https://basic-shop-nine.vercel.app/',
     codeLink: 'https://github.com/RiqueBruno/basicShop',
     designLink:
       'https://www.figma.com/design/0QmmjgyPvPlP8dJS48Zr0X/BasicShop?node-id=0-1',
     image: basicShopMockup,
-    imagePreview: '../assets/mockup/basicShopMockupPreview.png',
+    imagePreview: basicShopMockup,
   },
 ];
 
