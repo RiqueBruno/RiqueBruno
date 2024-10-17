@@ -75,11 +75,7 @@ interface TechIconProps {
   color?: string;
 }
 
-const TechIcon: React.FC<TechIconProps> = ({
-  name,
-  size = 40,
-  color = 'pink',
-}) => {
+const TechIcon: React.FC<TechIconProps> = ({ name, size = 40, color = '' }) => {
   const IconComponent = iconMap[name];
 
   if (name === 'Nextjs') {
