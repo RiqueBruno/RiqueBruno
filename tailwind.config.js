@@ -44,6 +44,7 @@ module.exports = {
       card: {
         light: '#281404bc',
         dark: '#6f446a8d',
+        cardbg: '#f012d294',
       },
       hoverCard: {
         light: '#3a1e06bc',
