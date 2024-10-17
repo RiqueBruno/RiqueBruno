@@ -43,8 +43,8 @@ module.exports = {
       },
       card: {
         light: '#281404bc',
-        dark: '#6f446a8d',
-        cardbg: '#f012d294',
+        dark: 'rgba(111, 68, 106, 0.2)',
+        cardbg: 'rgba(240, 18, 211, 0.4)',
       },
       hoverCard: {
         light: '#3a1e06bc',
