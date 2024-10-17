@@ -19,7 +19,7 @@ export default function ProjectsList({
         <LinkMenu text="Projetos" id="" emote="🔗" />
         <h2 className="text-3xl my-8 w-full text-center">Meus Projetos</h2>
       </header>
-      <div className="h-[58%]">
+      <div className="h-[70%]">
         {projects.map((project) => (
           <CardProject
             key={project.id}
