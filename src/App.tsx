@@ -7,6 +7,7 @@ import ProjectsList from './components/ProjectsList/ProjectsList';
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [imageOpen, setImageOpen] = useState(false);
+  const [projectId, setProjectId] = useState(0);
 
   const handleThemeChange = () => {
     setDarkMode(!darkMode);
