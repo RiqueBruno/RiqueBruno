@@ -49,7 +49,12 @@ function App() {
         <Header darkMode={darkMode} handleThemeChange={handleThemeChange} />
         <Home darkMode={darkMode} />
         <About />
-        <ProjectsList imageOpen={imageOpen} setImageOpen={setImageOpen} />
+        <ProjectsList
+          imageOpen={imageOpen}
+          setImageOpen={setImageOpen}
+          projectId={projectId}
+          setProjectId={setProjectId}
+        />
       </main>
     </div>
   );
