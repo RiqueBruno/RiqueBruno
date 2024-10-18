@@ -16,7 +16,6 @@ export default function Home({ darkMode }: HomeProps) {
       <div id="home" className="absolute top-0" />
       <div className="lg:grid lg:grid-cols-2 w-full h-full z-40 pb-20 flex flex-col items-center justify-center">
         <div className="flex flex-col justify-center items-center space-y-4 dark:text-text-dark text-text-light">
-          <LinkMenu text="Saudações!" emote="👋" id="" />
           <div className="lg:hidden rounded-full overflow-hidden h-52 w-52 border-2 border-primary z-50 shadow-md">
             <img
               src={brunoImage}
@@ -24,16 +23,17 @@ export default function Home({ darkMode }: HomeProps) {
               className="lg:hidden w-full h-full object-cover"
             />
           </div>
-          <div>
+          <div className="text-center md:text-start space-y-2">
+            <LinkMenu text="Saudações!" emote="👋" id="" />
             <h1 className="lg:text-5xl text-3xl font-bold z-[100]">
               Bruno&nbsp;
               <br className="hidden lg:block" />
               Henrique
             </h1>
-            <h2 className="lg:text-2xl text-lg z-[100]">
+            <h2 className="lg:text-2xl text-base z-[100]">
               Front-end developer · UI designer
             </h2>
-            <div className="lg:space-x-4 flex justify-around lg:justify-start lg:items-start lg:px-0 w-full px-10 z-[100]">
+            <div className="lg:space-x-4 flex justify-around lg:justify-start lg:items-start lg:px-0 w-full px-10 space-x-2 z-[100]">
               <SocialMedia
                 darkMode={darkMode}
                 type="Linkedin"
