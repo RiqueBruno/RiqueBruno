@@ -5,8 +5,8 @@ import LinkMenu from '../LinkMenu/LinkMenu';
 export default function About() {
   return (
     <section className="bg-primary dark:bg-secondary-light relative flex flex-col lg:flex-row justify-center items-center p-10 h-screen">
-      <div className="lg:flex lg:flex-row lg:items-center lg:justify-around w-full lg:px-64">
-        <div className="hidden lg:block rounded-full overflow-hidden h-72 w-72 border-2 border-primary z-50 shadow-md">
+      <div className="lg:flex lg:flex-row lg:items-center lg:justify-around w-full lg:space-x-10">
+        <div className="hidden lg:block rounded-full overflow-hidden h-72 w-72 lg:h-80 lg:w-80 border-2 border-primary z-50 shadow-md">
           <img
             src={brunoImage}
             alt="Imagem de Bruno"
