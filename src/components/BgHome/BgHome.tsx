@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style/Bg.css';
+import '../../styles/Bg.css';
 
 export default function BgHome() {
   function getRandomInRange(min: number, max: number): number {

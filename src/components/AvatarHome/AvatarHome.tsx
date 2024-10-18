@@ -1,7 +1,7 @@
 import React from 'react';
 import avatar from '../../assets/images/Avatar.png';
 import TechIcon from '../Skill/Skill';
-import '../../style/Bg.css';
+import '../../styles/Bg.css';
 
 type AvatarHomeProps = {
   darkMode: boolean;
