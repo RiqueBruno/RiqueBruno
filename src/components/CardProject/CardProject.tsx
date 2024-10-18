@@ -36,6 +36,11 @@ export default function CardProject({
     console.log('Project clicked');
   }
 
+  const truncatedDescription =
+    description.length > 200
+      ? `${description.substring(0, 200)}...`
+      : description;
+
   return (
     <article className="h-full w-72 lg:h-[32rem] lg:w-[32rem] rounded-md border-2 border-primary-light relative dark:text-text-dark text-text-light">
       <div className="w-full h-full dark:bg-card-dark flex flex-col justify-center items-center z-[50] p-2">
@@ -55,8 +60,19 @@ export default function CardProject({
         <header className="z-[51] text-2xl mb-2 lg:mb-4">
           <h3>{title}</h3>
         </header>
-        <div className="z-[51] text-sm text-center mb-2 lg:mb-8 border-b-2 border-transparent w-[80%] opacity-70">
-          <p>{description}</p>
+        <div className="z-[51] text-sm text-center mb-2 lg:mb-2 xl:mb-8 border-b-2 border-transparent w-[80%] opacity-70 pb-2">
+          <p className="scrollbar overflow-y-auto md:text-sm lg:text-xs max-h-40 h-40 lg:max-h-16 xl:h-24">
+            {isExpanded ? description : truncatedDescription}
+            {description.length > 200 && (
+              <button onClick={handleToggleExpand} className="ml-2">
+                {isExpanded ? (
+                  <strong className="text-primary">Ver menos</strong>
+                ) : (
+                  <strong className="text-primary">Ver mais</strong>
+                )}
+              </button>
+            )}
+          </p>
         </div>
         <div className="z-[51] border-b-2 border-transparent w-[90%] lg:w-[80%] flex justify-around mb-4">
           <LinkCard link={deployLink} type="Deploy" />
