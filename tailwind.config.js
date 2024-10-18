@@ -57,7 +57,7 @@ module.exports = {
         darkHover: '#a8359b8d',
       },
       red: {
-        DEFAULT: '#FF000',
+        DEFAULT: '#ff0000',
         light: '#ff4c4c',
       },
       white: '#ffffff',
