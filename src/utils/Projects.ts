@@ -1,5 +1,6 @@
 import { TechName } from '../components/Skill/Skill';
 import basicShopMockup from '../assets/mockup/basicShopMockUp.png';
+import recipesAppMockup from '../assets/mockup/recipeAppMockUp.png';
 
 type Project = {
   id: number;
@@ -26,6 +27,20 @@ const projects: Project[] = [
       'https://www.figma.com/design/0QmmjgyPvPlP8dJS48Zr0X/BasicShop?node-id=0-1',
     image: basicShopMockup,
     imagePreview: basicShopMockup,
+  },
+  {
+    id: 2,
+    title: 'Recipes App',
+    description:
+      'Um aplicativo de receitas. Foi desenvolvio em grupo, durante o curso na Trybe. Com uma interface moderna e responsiva, o usuário pode acompanhar suas receitas favoritas, marcar andamento e salvar nos favoritos.',
+    skills: ['React', 'CSS', 'Figma'],
+    deployLink: 'https://recipes-app-group-1.surge.sh/',
+    codeLink:
+      'https://github.com/geovannaotoni/trybe-project-recipes-app?tab=readme-ov-file',
+    designLink:
+      'https://www.figma.com/design/bYMrChGsGyTjMadfTiYcwU/cook-yourself?node-id=0-1&node-type=canvas&t=d6jDxZBIVagBfkBa-0',
+    image: recipesAppMockup,
+    imagePreview: recipesAppMockup,
   },
 ];
 
