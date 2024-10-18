@@ -50,7 +50,7 @@ export default function Header({ darkMode, handleThemeChange }: HeaderProps) {
     <header
       className={`${
         open ? 'h-96' : 'h-20'
-      } h-32 lg:h-20 lg:pb-12 md:flex md:justify-around md:items-center pt-10 fixed md:relative lg:fixed w-full z-[1000] dark:bg-background-dark bg-background-light transition-all`}
+      } h-32 lg:h-20 mr-0 pr-0 lg:pb-12 md:flex md:justify-around md:items-center pt-10 fixed md:relative lg:fixed w-screen z-[1000] dark:bg-background-dark bg-background-light transition-all`}
     >
       <div
         className={`${
