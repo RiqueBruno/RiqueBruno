@@ -56,6 +56,10 @@ module.exports = {
         dark: 'rgba(0, 0, 0, 0.45)',
         darkHover: '#a8359b8d',
       },
+      red: {
+        DEFAULT: '#FF000',
+        light: '#ff4c4c',
+      },
       white: '#ffffff',
       black: '#000000',
       transparent: 'rgba(94, 88, 88, 0.19)',
