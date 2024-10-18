@@ -44,8 +44,12 @@ function App() {
       Footer (botão redes sociais)      
   */
   return (
-    <div className={`${darkMode && 'dark'}`}>
-      <main className="dark:bg-background-dark bg-background-light h-full">
+    <div
+      className={`${
+        darkMode && 'dark'
+      } w-screen dark:bg-background-dark bg-secondary`}
+    >
+      <main className="dark:bg-background-dark bg-background-light h-full w-screen">
         <Header darkMode={darkMode} handleThemeChange={handleThemeChange} />
         <Home darkMode={darkMode} />
         <About />
