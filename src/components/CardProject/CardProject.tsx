@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LinkCard from '../LinkCard/LinkCard';
 import TechIcon from '../Skill/Skill';
 import { TechName } from '../Skill/Skill';
@@ -30,10 +30,10 @@ export default function CardProject({
   setImageOpen,
   setProjectId,
 }: ProjectProps) {
-  function handleProjectClick(id: number): void {
-    setProjectId(id);
-    setImageOpen(true);
-    console.log('Project clicked');
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  function handleToggleExpand() {
+    setIsExpanded(!isExpanded);
   }
 
   const truncatedDescription =
@@ -51,7 +51,10 @@ export default function CardProject({
             className="h-full w-full object-contain"
           />
           <button
-            onClick={() => handleProjectClick(id)}
+            onClick={() => {
+              setProjectId(id);
+              setImageOpen(true);
+            }}
             className="top-0 right-10 absolute cursor-pointer text-text-light lg:text-3xl dark:text-primary"
           >
             <IoExpand />
