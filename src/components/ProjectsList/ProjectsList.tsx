@@ -1,8 +1,9 @@
 import React from 'react';
 import projects from '../../utils/Projects';
-import CardProject from '../CardProject/CardProject';
 import LinkMenu from '../LinkMenu/LinkMenu';
 import ImagePreview from '../ImagePreview/ImagePreview';
+import '../../styles/scroll.css';
+import Carousel from '../Carousel/Carousel';
 
 type ProjectProps = {
   imageOpen: boolean;
@@ -24,8 +25,13 @@ export default function ProjectsList({
         <LinkMenu text="Projetos" id="" emote="🔗" />
         <h2 className="text-3xl my-8 w-full text-center">Meus Projetos</h2>
       </header>
-      <div className="h-[70%] lg:w-[80%] flex lg:items-center lg:p-4 lg:rounded-lg">
-        {projects.map((project) => (
+      <div className="h-[70%] w-[80%] m-auto flex items-center rounded-lg">
+        <Carousel
+          arrProjects={projects}
+          setImageOpen={setImageOpen}
+          setProjectId={setProjectId}
+        />
+        {/* {projects.map((project) => (
           <CardProject
             key={project.id}
             id={project.id}
@@ -39,7 +45,7 @@ export default function ProjectsList({
             image={project.image}
             setProjectId={setProjectId}
           />
-        ))}
+        ))} */}
       </div>
       {imageOpen && (
         <div className="bg-secondary-light h-[40%] lg:h-[80%] w-[80%] absolute top-56 lg:top-0 left-0 right-0 bottom-0 m-auto flex items-center justify-center z-[98] border-2 border-text-light dark:border-primary-light rounded-md">
