@@ -49,7 +49,7 @@ function App() {
         darkMode && 'dark'
       } w-screen dark:bg-background-dark bg-secondary`}
     >
-      <main className="dark:bg-background-dark bg-background-light h-full w-screen">
+      <main className="dark:bg-background-dark bg-background-light h-full w-screen overflow-x-hidden">
         <Header darkMode={darkMode} handleThemeChange={handleThemeChange} />
         <Home darkMode={darkMode} />
         <About />
