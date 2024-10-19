@@ -12,10 +12,10 @@ type HomeProps = {
 
 export default function Home({ darkMode }: HomeProps) {
   return (
-    <section className="dark:text-text-dark h-[780px] lg:h-[calc(100vh)] md:h-[calc(100vh-8rem)] pt-[38rem] md:pt-20 lg:pt-24 w-full relative overflow-hidden lg:overflow-auto">
+    <section className="dark:text-text-dark h-screen lg:h-[calc(100vh)] md:h-[calc(100vh-8rem)] md:pt-20 lg:pt-24 w-full relative overflow-hidden lg:overflow-auto">
       <div id="home" className="absolute top-0" />
-      <div className="lg:grid lg:grid-cols-2 w-full h-full z-40 pb-20 flex flex-col items-center justify-center">
-        <div className="flex flex-col justify-center items-center space-y-4 dark:text-text-dark text-text-light">
+      <div className="lg:grid lg:grid-cols-2 w-full h-full z-40 flex flex-col items-center justify-center">
+        <div className="flex flex-col justify-center h-full w-full items-center space-y-4 dark:text-text-dark text-text-light">
           <div className="lg:hidden rounded-full overflow-hidden h-52 w-52 border-2 border-primary z-50 shadow-md">
             <img
               src={brunoImage}
@@ -23,7 +23,7 @@ export default function Home({ darkMode }: HomeProps) {
               className="lg:hidden w-full h-full object-cover"
             />
           </div>
-          <div className="text-center md:text-start space-y-2">
+          <div className="text-center lg:text-start space-y-2">
             <LinkMenu text="Saudações!" emote="👋" id="" />
             <h1 className="lg:text-5xl text-3xl font-bold z-[100]">
               Bruno&nbsp;
@@ -59,7 +59,7 @@ export default function Home({ darkMode }: HomeProps) {
           </div>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="justify-center items-center hidden lg:flex">
           <div className="h-[28rem] w-[30rem]">
             <AvatarHome darkMode={darkMode} />
           </div>
