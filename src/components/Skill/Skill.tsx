@@ -19,7 +19,9 @@ import {
   SiPostman,
   SiRedux,
   SiVite,
+  SiInsomnia,
 } from 'react-icons/si';
+import { RiNextjsFill } from 'react-icons/ri';
 import { DiSass, DiPhotoshop, DiIllustrator } from 'react-icons/di';
 
 export type TechName =
@@ -57,8 +59,8 @@ const iconMap: Record<TechName, IconType> = {
   Figma: SiFigma,
   Photoshop: DiPhotoshop,
   Illustrator: DiIllustrator,
-  Nextjs: FaReact,
-  Insomnia: SiPostman,
+  Nextjs: RiNextjsFill,
+  Insomnia: SiInsomnia,
   Docker: FaDocker,
   Vite: SiVite,
   Postman: SiPostman,
@@ -77,12 +79,6 @@ interface TechIconProps {
 
 const TechIcon: React.FC<TechIconProps> = ({ name, size, color = '' }) => {
   const IconComponent = iconMap[name];
-
-  if (name === 'Nextjs') {
-    return <img src={`../../assets/icon/${name}.svg`} alt={name} />;
-  } else if (name === 'Insomnia') {
-    return <img src={`../../assets/icon/${name}.svg`} alt={name} />;
-  }
 
   return <IconComponent size={size} color={color} />;
 };
