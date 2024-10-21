@@ -13,13 +13,13 @@ export default function About() {
             className="lg:block w-full h-full object-cover"
           />
         </div>
-        <div className="flex flex-col items-center justify-center dark:text-text-dark text-text-light lg:items-start">
+        <div className="flex flex-col items-center justify-center dark:text-text-dark text-text-light lg:items-start space-x-4">
           <LinkMenu text="Sobre mim" emote="👨‍💻" id="about" />
-          <h2 className="text-3xl my-8 w-full text-center">
+          <h2 className="text-3xl w-full text-center lg:text-start">
             Construindo o futuro, uma linha de código por vez.
           </h2>
-          <p className="w-full text-center lg:text-start">
-            <ul className="mt-4 space-y-2 text-base list-none">
+          <div className="w-full text-center lg:text-start">
+            <ul className="mt-4 space-y-2 text-base list-none lg:text-start">
               <li>
                 👋 Me chamo Bruno Henrique Cardoso, mas pode me chamar apenas de
                 Bruno. Prazer!
@@ -37,7 +37,7 @@ export default function About() {
                 🚀 Tentando ser um pouquinho melhor do que ontem todos os dias.
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
       <div className="absolute border-2 rounded-md h-80 w-80 bottom-10 right-10 z-0 opacity-15 lg:opacity-60 dark:border-primary border-secondary-light" />
