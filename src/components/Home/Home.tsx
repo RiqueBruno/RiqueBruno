@@ -23,7 +23,7 @@ export default function Home({ darkMode }: HomeProps) {
               className="lg:hidden w-full h-full object-cover"
             />
           </div>
-          <div className="text-center lg:text-start space-y-2 z-[1000]">
+          <div className="text-center lg:text-start space-y-4 z-[1000]">
             <LinkMenu text="Saudações!" emote="👋" id="" />
             <h1 className="lg:text-5xl text-3xl font-bold z-[100]">
               Bruno&nbsp;
