@@ -13,7 +13,7 @@ type HomeProps = {
 export default function Home({ darkMode }: HomeProps) {
   return (
     <section className="dark:text-text-dark h-screen lg:h-[calc(100vh)] md:h-[calc(100vh-8rem)] md:pt-20 lg:pt-24 w-full relative overflow-hidden lg:overflow-auto">
-      <div id="home" className="absolute top-0" />
+      <div id="home" className="absolute top-0 h-full w-full z-[0]" />
       <div className="lg:grid lg:grid-cols-2 w-full h-full z-40 flex flex-col items-center justify-center">
         <div className="flex flex-col justify-center h-full w-full items-center space-y-4 dark:text-text-dark text-text-light">
           <div className="lg:hidden rounded-full overflow-hidden h-52 w-52 border-2 border-primary z-50 shadow-md">

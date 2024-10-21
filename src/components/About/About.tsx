@@ -5,6 +5,7 @@ import LinkMenu from '../LinkMenu/LinkMenu';
 export default function About() {
   return (
     <section className="bg-primary dark:bg-secondary-light overflow-hidden relative flex flex-col lg:flex-row justify-center items-center p-10 h-screen">
+      <div id="about" className="absolute top-0 h-full w-full z-[0]" />
       <div className="lg:flex lg:flex-row lg:items-center lg:justify-around w-full lg:space-x-10">
         <div className="hidden lg:block rounded-full overflow-hidden h-72 w-72 lg:h-80 lg:w-80 border-2 border-primary z-50 shadow-md">
           <img
@@ -14,7 +15,7 @@ export default function About() {
           />
         </div>
         <div className="flex flex-col items-center justify-center dark:text-text-dark text-text-light lg:items-start space-x-4">
-          <LinkMenu text="Sobre mim" emote="👨‍💻" id="about" />
+          <LinkMenu text="Sobre mim" emote="👨‍💻" id="" />
           <h2 className="text-3xl w-full text-center lg:text-start">
             Construindo o futuro, uma linha de código por vez.
           </h2>
