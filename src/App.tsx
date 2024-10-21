@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import ProjectsList from './components/ProjectsList/ProjectsList';
+import Skills from './components/SkillsPage/Skills';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -59,6 +60,7 @@ function App() {
           projectId={projectId}
           setProjectId={setProjectId}
         />
+        <Skills />
       </main>
     </div>
   );
