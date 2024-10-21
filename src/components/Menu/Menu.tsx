@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ThemeButton from '../ThemeButton/ThemeButton';
 
 type MenuProps = {
@@ -18,31 +18,55 @@ export default function Menu({
   aClassName,
   handlerCloseMenu,
 }: MenuProps) {
-  const [activeLink, setActiveLink] = useState<string | null>('home');
+  const [activeLink, setActiveLink] = useState<string>('home');
 
-  const handleClick = (id: string) => {
-    setActiveLink(id);
-    handlerCloseMenu();
+  const sections = [
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'Sobre' },
+    { id: 'projects', label: 'Projetos' },
+    { id: 'skills', label: 'Tecnologias' },
+    { id: 'contact', label: 'Contato' },
+  ];
+
+  const handleScroll = () => {
+    let currentSection = 'home';
+    sections.forEach((section) => {
+      const element = document.getElementById(section.id);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= 0) {
+          currentSection = section.id;
+        }
+      }
+    });
+
+    if (currentSection !== activeLink) {
+      setActiveLink(currentSection);
+    }
   };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [activeLink]);
 
   return (
     <ul className={ulClassName}>
-      {[
-        { id: 'home', label: 'Home' },
-        { id: 'about', label: 'Sobre' },
-        { id: 'projects', label: 'Projetos' },
-        { id: 'skills', label: 'Tecnologias' },
-        { id: 'contact', label: 'Contato' },
-      ].map((item) => (
+      {sections.map((item) => (
         <li key={item.id} className={liClassName}>
           <a
             href={`#${item.id}`}
             className={`${aClassName} ${
               activeLink === item.id ? 'text-primary' : ''
             }`}
-            onClick={() => handleClick(item.id)}
+            onClick={() => {
+              setActiveLink(item.id);
+              handlerCloseMenu();
+            }}
           >
-            {item.label}
+            {item.label.charAt(0).toUpperCase() + item.label.slice(1)}
           </a>
         </li>
       ))}
