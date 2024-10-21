@@ -4,6 +4,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      boxShadow: {
+        'custom-magenta': '10px 10px 0px 0px rgba(255,0,255,0.2)',
+      },
       animation: {
         slider: 'slider 32s linear infinite',
       },
