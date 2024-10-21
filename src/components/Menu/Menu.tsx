@@ -31,7 +31,7 @@ export default function Menu({
         { id: 'home', label: 'Home' },
         { id: 'about', label: 'Sobre' },
         { id: 'projects', label: 'Projetos' },
-        { id: 'skills', label: 'Skills' },
+        { id: 'skills', label: 'Tecnologias' },
         { id: 'contact', label: 'Contato' },
       ].map((item) => (
         <li key={item.id} className={liClassName}>
