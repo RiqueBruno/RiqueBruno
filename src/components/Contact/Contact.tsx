@@ -1,5 +1,6 @@
 import React from 'react';
 import LinkMenu from '../LinkMenu/LinkMenu';
+import contactMe from '../../assets/images/Contact.png';
 
 export default function Contact() {
   return (
@@ -10,7 +11,7 @@ export default function Contact() {
       </header>
       <div>
         <div>
-          <img src="" alt="" />
+          <img src={contactMe} alt="Entre em contato comigo." />
         </div>
         <div>
           <form>
