@@ -32,8 +32,8 @@ export default function Skills() {
         id="skills"
       />
       <div className="absolute h-full w-full inset-0 z-[0] text-[24rem] text-center opacity-10 hidden lg:block">
-        <div>MINHAS</div>
-        <div>TECNOLOGIAS</div>
+        <div className="animate-sliderText">MINHAS</div>
+        <div className="animate-sliderTextReverse">TECNOLOGIAS</div>
       </div>
       <div className="z-[500] flex flex-col justify-center items-center space-y-4">
         <LinkMenu text="Minhas Skills" emote="🧐" id="" />
