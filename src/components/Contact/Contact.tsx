@@ -4,7 +4,7 @@ import contactMe from '../../assets/images/Contact.png';
 
 export default function Contact() {
   return (
-    <section>
+    <section id="contact">
       <header>
         <LinkMenu emote="📫" text="Contato" id="" />
         <h2>Contato</h2>
