@@ -1,9 +1,11 @@
 import React from 'react';
+import LinkMenu from '../LinkMenu/LinkMenu';
 
 export default function Contact() {
   return (
     <section>
       <header>
+        <LinkMenu emote="📫" text="Contato" id="" />
         <h2>Contato</h2>
       </header>
       <form>
