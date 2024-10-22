@@ -9,11 +9,21 @@ module.exports = {
       },
       animation: {
         slider: 'slider 32s linear infinite',
+        sliderText: 'sliderText 90s linear infinite alternate',
+        sliderTextReverse: 'sliderTextReverse 90s linear infinite alternate',
       },
       keyframes: {
         slider: {
           from: { left: '100%' },
           to: { left: '-190px' },
+        },
+        sliderText: {
+          '0%': { transform: 'translateX(50%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        sliderTextReverse: {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(50%)' },
         },
       },
     },
