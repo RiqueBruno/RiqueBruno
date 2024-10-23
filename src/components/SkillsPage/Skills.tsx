@@ -36,8 +36,8 @@ export default function Skills() {
         <div className="animate-sliderTextReverse">TECNOLOGIAS</div>
       </div>
       <div className="z-[500] flex flex-col justify-center items-center space-y-4">
-        <LinkMenu text="Minhas Skills" emote="🧐" id="" />
-        <h2 className="text-3xl lg:pb-14">Tecnologias</h2>
+        <LinkMenu text="Skills" emote="🧐" id="" />
+        <h2 className="text-3xl lg:pb-14">Minhas Tecnologias</h2>
       </div>
       <div className="lg:h-[60%] z-[500] lg:w-[60%] w-full flex flex-col justify-center items-center rounded-lg lg:border-2 lg:border-primary-light space-y-8 lg:shadow-custom-magenta dark:bg-background-dark bg-background-light">
         <section className="flex flex-col items-center justify-center w-[90%] space-y-8">
