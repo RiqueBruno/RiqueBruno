@@ -5,6 +5,7 @@ import About from './components/About/About';
 import ProjectsList from './components/ProjectsList/ProjectsList';
 import Skills from './components/SkillsPage/Skills';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -63,6 +64,7 @@ function App() {
         />
         <Skills />
         <Contact />
+        <Footer darkMode={darkMode} />
       </main>
     </div>
   );
