@@ -1,0 +1,51 @@
+.div-label {
+  position: relative;
+}
+
+.div-label input {
+  outline: none;
+  font-size: 1em;
+  transition: 0.5s ease-in-out;
+  padding-left: 4%;
+}
+
+.label-label {
+  position: absolute;
+  left: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: text;
+  transition: 0.5s ease-in-out;
+}
+
+.div-label input:focus,
+.div-label input:valid,
+.div-label textarea:focus,
+.div-label textarea:valid {
+  border: #d815ff 2px solid;
+}
+
+.div-label input:focus,
+.div-label input:invalid,
+.div-label textarea:focus,
+.div-label textarea:invalid {
+  border: #f1006c 2px solid;
+}
+
+.div-label input:focus + .label-label,
+.div-label input:valid + .label-label,
+.div-label textarea:focus + .label-label,
+.div-label textarea:valid + .label-label {
+  top: 0;
+  font-size: 0.8em;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #dadada;
+  -webkit-text-fill-color: #430337;
+}
+
+.dark input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px black inset;
+  -webkit-text-fill-color: #fff;
+}
