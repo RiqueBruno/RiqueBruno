@@ -8,17 +8,17 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-screen h-screen flex flex-col items-center justify-center text-text-light dark:text-text-dark space-y-8"
+      className="w-screen h-screen flex flex-col items-center justify-center text-text-light dark:text-text-dark space-y-16"
     >
       <header className="w-full flex flex-col items-center justify-center space-y-4">
         <LinkMenu emote="📫" text="Contato" id="" />
         <h2 className="text-3xl">Contato</h2>
       </header>
-      <div className="flex space-x-4 w-[80%]">
+      <div className="flex justify-center items-center space-x-4 w-[80%]">
         <div className="hidden w-[50%] lg:flex items-center justify-center">
           <img src={contactMe} alt="Entre em contato comigo." />
         </div>
-        <div className="lg:w-[50%] flex justify-start items-center">
+        <div className="lg:w-[50%] w-full flex justify-center lg:justify-start items-center">
           <form className="flex flex-col p-4 space-y-8 items-start justify-center w-[84%]">
             <div className="w-full relative h-12 div-label">
               <input
@@ -75,7 +75,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
-      <div className="w-full h-36 flex justify-center items-end">
+      <div className="w-full h-28 flex justify-center items-end">
         <a
           href="#home"
           className="flex space-x-2 justify-center items-center text-link text-base dark:border-link dark:border-none border-2 dark:bg-background-dark p-2 rounded-lg"
