@@ -8,7 +8,7 @@ type FooterProps = {
 export default function Footer({ darkMode }: FooterProps) {
   return (
     <footer className="bg-footer-light dark:bg-footer-dark text-white text-center text-sm md:text-base py-4 flex flex-col md:flex-row space-y-4 md:space-y-0 md:justify-between justify-around items-center px-10">
-      <h2>© 2024 - Todos os direitos reservados</h2>
+      <h2>Copyright © Bruno H. Cardoso · 2024</h2>
       <ul className="flex space-x-4">
         <li>
           <SocialMedia
