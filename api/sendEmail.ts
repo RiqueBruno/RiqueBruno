@@ -1,6 +1,16 @@
 import nodemailer from 'nodemailer';
 
-export default async function sendEmail(req, res) {
+type Request = {
+  method: string;
+  headers: { 'Content-Type': string };
+  body: {
+    name: string;
+    email: string;
+    message: string;
+  };
+};
+
+export default async function sendEmail(req: Request, res) {
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
     const transporter = nodemailer.createTransport({
