@@ -16,36 +16,6 @@ function App() {
     setDarkMode(!darkMode);
   };
 
-  /**
-  Criar componentes
-    Header
-      - Logo Ok
-      - Nav (Desktop e Mobile) OK
-      - Botão de trocar tema OK
-    Main
-      Home
-        - Fundo animado OK
-        - Titulo (niveis h1, h2, h3) OK
-        - Avatar animado OK
-        - Barra com texto animado OK
-        - Botões de redes sociais OK
-      About
-        - Paragrafo OK
-        - Botão download curriculo - DEPOIS
-      Projects
-        - Card de projetos
-          + Imagem Mockup
-          + Botões (ver projeto, ver codigo e ver design)
-          + Tecnologias (Colocar o nome ao passar o mouse ou clicar)
-      Contact
-        - Formulário
-          + Nome
-          + Email
-          + Mensagem
-          + Botão enviar (usar nodeMailer)
-        - Botão voltar ao topo
-      Footer (botão redes sociais)      
-  */
   return (
     <div
       className={`${

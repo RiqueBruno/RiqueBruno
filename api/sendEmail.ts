@@ -1,18 +1,11 @@
 import nodemailer from 'nodemailer';
 
-type Request = {
-  method: string;
-  headers: { 'Content-Type': string };
-  body: {
-    name: string;
-    email: string;
-    message: string;
-  };
-};
-
-export default async function sendEmail(req: Request, res) {
+export default async function sendEmail(req, res) {
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
+
+    console.log('Request body:', req.body);
+
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -20,6 +13,7 @@ export default async function sendEmail(req: Request, res) {
         pass: process.env.PASSWORD,
       },
     });
+
     const mailOptions = {
       from: email,
       to: process.env.EMAIL,
@@ -28,10 +22,14 @@ export default async function sendEmail(req: Request, res) {
     };
 
     try {
-      await transporter.sendMail(mailOptions);
+      const info = await transporter.sendMail(mailOptions);
+      console.log('E-mail enviado:', info);
       res.status(200).json({ message: 'Email enviado com sucesso!' });
     } catch (error) {
-      res.status(500).json({ message: 'Erro ao enviar email!', error });
+      console.error('Erro ao enviar e-mail:', error);
+      res
+        .status(500)
+        .json({ message: 'Erro ao enviar email!', error: error.message });
     }
   } else {
     res.status(405).end(`Método ${req.method} não permitido!`);
