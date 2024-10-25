@@ -1,5 +1,3 @@
-import React from 'react';
-
 export type ThemeButtonProps = {
   darkMode: boolean;
   handleThemeChange: () => void;

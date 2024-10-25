@@ -1,4 +1,3 @@
-import React from 'react';
 import LinkMenu from '../LinkMenu/LinkMenu';
 import Skill, { TechName } from '../Skill/Skill';
 

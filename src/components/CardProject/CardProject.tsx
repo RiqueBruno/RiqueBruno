@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import LinkCard from '../LinkCard/LinkCard';
 import TechIcon from '../Skill/Skill';
 import { TechName } from '../Skill/Skill';

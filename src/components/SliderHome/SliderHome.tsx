@@ -1,4 +1,3 @@
-import React from 'react';
 import SliderItem from '../SliderItem/SliderItem';
 
 export default function SliderHome() {

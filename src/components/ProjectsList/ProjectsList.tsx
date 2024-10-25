@@ -1,4 +1,3 @@
-import React from 'react';
 import projects from '../../utils/Projects';
 import LinkMenu from '../LinkMenu/LinkMenu';
 import ImagePreview from '../ImagePreview/ImagePreview';

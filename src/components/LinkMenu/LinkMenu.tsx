@@ -1,5 +1,3 @@
-import React from 'react';
-
 type LinkMenuProps = {
   text: string;
   emote: '👋' | '🧐' | '🔗' | '👨‍💻' | '📫';

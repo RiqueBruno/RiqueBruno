@@ -1,4 +1,3 @@
-import React from 'react';
 import avatar from '../../assets/images/Avatar.png';
 import TechIcon from '../Skill/Skill';
 import '../../styles/Bg.css';

@@ -1,4 +1,3 @@
-import React from 'react';
 import SliderHome from '../SliderHome/SliderHome';
 import BgHome from '../BgHome/BgHome';
 import AvatarHome from '../AvatarHome/AvatarHome';

@@ -1,4 +1,3 @@
-import React from 'react';
 import LinkMenu from '../LinkMenu/LinkMenu';
 import contactMe from '../../assets/images/Contact.png';
 import { FaArrowUp } from 'react-icons/fa6';

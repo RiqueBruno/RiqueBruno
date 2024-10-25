@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../styles/Bg.css';
 
 export default function BgHome() {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 type SliderItemProps = {
   slider: string;
   delay: number;

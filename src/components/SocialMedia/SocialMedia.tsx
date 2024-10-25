@@ -1,4 +1,3 @@
-import React from 'react';
 import TechIcon from '../Skill/Skill';
 
 type SocialMediaProps = {

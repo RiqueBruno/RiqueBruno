@@ -1,4 +1,3 @@
-import React from 'react';
 import { GrDeploy } from 'react-icons/gr';
 import { IoLogoFigma } from 'react-icons/io5';
 import { FaCode } from 'react-icons/fa';
