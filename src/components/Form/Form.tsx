@@ -1,9 +1,39 @@
 import React from 'react';
 
 export default function Form() {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const target = event.target as typeof event.target & {
+      name: { value: string };
+      email: { value: string };
+      message: { value: string };
+    };
+
+    const response = await fetch('/api/sendEmail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: target.name.value,
+        email: target.email.value,
+        message: target.message.value,
+      }),
+    });
+    console.log('chegou antes do data');
+    const data = await response.json();
+    console.log('chegou depois do data');
+
+    alert(data.message);
+  };
+
   return (
     <section className="w-full h-full flex justify-center lg:justify-start items-center">
-      <form className="flex flex-col p-4 space-y-8 items-start justify-center w-[84%]">
+      <form
+        method="POST"
+        onSubmit={handleSubmit}
+        className="flex flex-col p-4 space-y-8 items-start justify-center w-[84%]"
+      >
         <div className="w-full relative h-12 div-label">
           <input
             type="text"
