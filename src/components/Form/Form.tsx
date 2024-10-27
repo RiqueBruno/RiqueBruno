@@ -1,4 +1,5 @@
 import React from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Form() {
   const [name, setName] = React.useState('');
@@ -7,28 +8,27 @@ export default function Form() {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const target = event.target as typeof event.target & {
-      name: { value: string };
-      email: { value: string };
-      message: { value: string };
+    const templateParams = {
+      from_name: name,
+      to_name: 'Bruno',
+      message: message,
+      email: email,
     };
 
-    const response = await fetch('/api/sendEmail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name: target.name.value,
-        email: target.email.value,
-        message: target.message.value,
-      }),
-    });
-    console.log('chegou antes do data');
-    const data = await response.json();
-    console.log('chegou depois do data');
+    emailjs
+      .send(
+        'service_qvglc8o',
+        'template_kbx9xlc',
+        templateParams,
+        'GFkOQHbPuJ9a7xxXY'
+      )
+      .then((response) => {
+        console.log('SUCCESS!', response);
+      })
 
-    alert(data.message);
+      .catch((error) => {
+        console.log('FAILED...', error);
+      });
   };
 
   return (
