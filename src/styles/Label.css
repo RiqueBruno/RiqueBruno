@@ -49,3 +49,28 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 50px black inset;
   -webkit-text-fill-color: #fff;
 }
+
+.invalid {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  cursor: pointer;
+  color: #f1006c;
+}
+
+.invalid:hover::after {
+  content: var(--content);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f1006c;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
