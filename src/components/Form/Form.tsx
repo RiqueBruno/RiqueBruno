@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 export default function Form() {
   const [name, setName] = React.useState('');
@@ -15,6 +16,16 @@ export default function Form() {
       email: email,
     };
 
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!isValidEmail || name.length < 1 || message.length < 10) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Preencha todos os campos corretamente!',
+      });
+      return;
+    }
+
     emailjs
       .send(
         'service_qvglc8o',
@@ -22,12 +33,23 @@ export default function Form() {
         templateParams,
         'GFkOQHbPuJ9a7xxXY'
       )
-      .then((response) => {
-        console.log('SUCCESS!', response);
+      .then(() => {
+        Swal.fire({
+          title: 'Tudo certo!',
+          text: 'Logo entrarei em contato!',
+          icon: 'success',
+        });
+        setName('');
+        setEmail('');
+        setMessage('');
       })
-
       .catch((error) => {
-        console.log('FAILED...', error);
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Algo deu errado!',
+          footer: `Error: ${error}`,
+        });
       });
   };
 
