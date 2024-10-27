@@ -45,6 +45,7 @@ export default function Form() {
             name="name"
             placeholder=" "
             required
+            onChange={(event) => setName(event.target.value)}
             className="dark:bg-background-dark bg-background-light dark:text-text-dark text-text-light border-2 border-primary rounded-lg p-2 w-full h-full"
           />
           <label
@@ -61,6 +62,7 @@ export default function Form() {
             name="email"
             placeholder=" "
             required
+            onChange={(event) => setEmail(event.target.value)}
             className="dark:bg-background-dark bg-background-light dark:text-text-dark text-text-light border-2 border-primary rounded-lg w-full h-full"
           />
           <label
@@ -75,6 +77,7 @@ export default function Form() {
             id="message"
             name="message"
             required
+            onChange={(event) => setMessage(event.target.value)}
             className="dark:bg-background-dark bg-background-light dark:text-text-dark text-text-light border-2 border-primary rounded-lg p-2 w-full h-full max-h-44 resize-none"
           ></textarea>
           <label
