@@ -22,6 +22,7 @@ export default function SocialMedia({
         location === 'home' ? 'bg-primary' : 'bg-secondary'
       } rounded-full w-12 h-12 flex justify-center items-center dark:hover:bg-text-dark hover:bg-text-light transition-all`}
     >
+      <meta name="description" content={`Botão para perfil ${type}`} />
       <TechIcon
         name={type}
         size={size}

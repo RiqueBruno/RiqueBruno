@@ -87,6 +87,7 @@ export default function Carousel({
             ref={index === 0 ? cardRef : null}
             className="w-72 md:h-[90%] lg:h-[90%] xl:w-[32rem] xl:h-[32rem] lg:w-[32rem] h-full"
           >
+            <meta name="description" content={project.description} />
             <CardProject
               key={project.id}
               id={project.id}
@@ -103,6 +104,10 @@ export default function Carousel({
           </div>
         ))}
       </div>
+      <meta
+        name="description"
+        content="Botões para rolar o carrossel para a esquerda"
+      />
       <button
         id="left"
         disabled={isAtStart}
@@ -111,6 +116,10 @@ export default function Carousel({
       >
         <FaChevronCircleLeft />
       </button>
+      <meta
+        name="description"
+        content="Botões para rolar o carrossel para a direita"
+      />
       <button
         id="right"
         disabled={isAtEnd}
