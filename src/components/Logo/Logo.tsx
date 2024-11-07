@@ -1,5 +1,5 @@
-import logoDark from '../../assets/logo/dark.png';
-import logoLight from '../../assets/logo/light.png';
+import logoDark from '../../assets/logo/dark.webp';
+import logoLight from '../../assets/logo/light.webp';
 
 type LogoProps = {
   darkMode: boolean;
