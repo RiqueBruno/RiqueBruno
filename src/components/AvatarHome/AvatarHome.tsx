@@ -1,4 +1,4 @@
-import avatar from '../../assets/images/Avatar.png';
+import avatar from '../../assets/images/Avatar.webp';
 import TechIcon from '../Skill/Skill';
 import '../../styles/Bg.css';
 

@@ -1,9 +1,9 @@
 import { TechName } from '../components/Skill/Skill';
-import basicShopMockup from '../assets/mockup/basicShopMockUp.png';
-import recipesAppMockup from '../assets/mockup/recipeAppMockUp.png';
-import ttunesMockup from '../assets/mockup/TTunoAppMockUp.png';
-import wexpensesMockup from '../assets/mockup/WEAppMockUp.png';
-import triviaChallengerMockup from '../assets/mockup/triviaAppMockUp.png';
+import basicShopMockup from '../assets/mockup/basicShopMockUp.webp';
+import recipesAppMockup from '../assets/mockup/recipeAppMockUp.webp';
+import ttunesMockup from '../assets/mockup/TTunoAppMockUp.webp';
+import wexpensesMockup from '../assets/mockup/WEAppMockUp.webp';
+import triviaChallengerMockup from '../assets/mockup/triviaAppMockUp.webp';
 
 export type Project = {
   id: number;

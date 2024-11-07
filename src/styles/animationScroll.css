@@ -1,0 +1,27 @@
+.right-center {
+  animation: right-center 1s ease-in-out;
+  transition: all 1s;
+}
+
+@keyframes right-center {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.left-center {
+  animation: left-center 1s ease-in-out;
+  transition: all 1s;
+}
+
+@keyframes left-center {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

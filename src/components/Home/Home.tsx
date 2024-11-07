@@ -2,7 +2,7 @@ import SliderHome from '../SliderHome/SliderHome';
 import BgHome from '../BgHome/BgHome';
 import AvatarHome from '../AvatarHome/AvatarHome';
 import LinkMenu from '../LinkMenu/LinkMenu';
-import brunoImage from '../../assets/images/foto.jpg';
+import brunoImage from '../../assets/images/foto.webp';
 import SocialMedia from '../SocialMedia/SocialMedia';
 
 type HomeProps = {

@@ -1,5 +1,5 @@
 import LinkMenu from '../LinkMenu/LinkMenu';
-import contactMe from '../../assets/images/Contact.png';
+import contactMe from '../../assets/images/Contact.webp';
 import { FaArrowUp } from 'react-icons/fa6';
 import '../../styles/Label.css';
 import Form from '../Form/Form';
