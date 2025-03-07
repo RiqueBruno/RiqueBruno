@@ -3,12 +3,12 @@
 </div>
 <br>
 
-<p align="center"> um entusiasta de tecnologia, desenvolvedor web júnior e estudante de UX Design em busca de desafios empolgantes para impulsionar minha carreira. Com sólida formação em Desenvolvimento web na Trybe, estou dedicado a transformar códigos em soluções incríveis. </p>
+<p align="center"> Um entusiasta de tecnologia, desenvolvedor web júnior e estudante de UX Design em busca de desafios empolgantes para impulsionar minha carreira. Com sólida formação em Desenvolvimento web na Trybe, estou dedicado a transformar códigos em soluções incríveis. </p>
 
 - 👨‍💻 Desenvolvedor Web / Web Development
 - 👦🏽 Pronouns: Ele/Dele / He/Him
 - Email: riquebrunotrabalhos@gmail.com
-- Linkedin: <a href="https://www.linkedin.com/in/bruno-h-cardoso/">bruno-h-cardoso</a>
+- Linkedin: <a href="https://www.linkedin.com/in/brunohenriquec/">bruno-h-cardoso</a>
 
 ##
 
