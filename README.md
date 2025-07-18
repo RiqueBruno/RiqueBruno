@@ -21,7 +21,7 @@
  <h2 align="center">🏴‍☠️ Habilidades & Ferramentas 🏴‍☠️</h2>
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,tailwind,figma,redux,docker,git,jest,nodejs,sequelize,java&theme=dark" />
+    <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,tailwind,figma,redux,docker,git,nodejs,sequelize&theme=dark" />
   </a>
 </p>
 <br>
