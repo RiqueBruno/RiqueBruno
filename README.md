@@ -11,7 +11,7 @@
 - Linkedin: <a href="https://www.linkedin.com/in/brunohenriquec/">brunohenriquec</a>
 - Instagram: <a href="https://www.instagram.com/theriquebruno/">@theriquebruno</a>
 - Facebook: <a href="https://www.facebook.com/share/19ZgpnjHjh/">Bruno Henrique</a>
-- Portfólio: <a href="https://rique-bruno.vercel.app/">Portfólio Bruno Henrique</a>
+- Portfólio: <a href="https://rique-bruno.vercel.app/">Bruno Henrique</a>
 
 ##
 
