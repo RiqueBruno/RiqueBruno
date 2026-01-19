@@ -14,7 +14,7 @@
 
 ##
 
- <h2 align="center">🏴‍☠️ Habilidades & Ferramentas 🏴‍☠️</h2>
+ <h2 align="center">Habilidades & Ferramentas</h2>
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=js,ts,html,css,react,tailwind,figma,redux,docker,git,nodejs,sequelize&theme=dark" />
@@ -26,7 +26,7 @@
 
 ##
 
- <h2 align="center">📜 Certificates / Certificados 📜</h2>
+ <h2 align="center">Certificates / Certificados</h2>
   <div style="display: inline_block" align="center">
     -----
     <a href="https://www.credential.net/profile/brunohenriquecardoso922841/wallet">
