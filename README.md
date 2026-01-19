@@ -1,16 +1,9 @@
-<div bgcolor='blue' align='center'>
-  <img src='public/cab.png'>
-</div>
-<br>
-
 <p align="center"> Um entusiasta de tecnologia, desenvolvedor web júnior em busca de desafios empolgantes para impulsionar minha carreira. Com sólida formação em Desenvolvimento web na Trybe, atualmente estudo Ciencia da Computação e estou dedicado a transformar códigos em soluções incríveis. </p>
 
 - 👨‍💻 Desenvolvedor Web / Web Development
 - 👦🏽 Pronouns: Ele/Dele / He/Him
 - Email: riquebrunotrabalhos@gmail.com
 - Linkedin: <a href="https://www.linkedin.com/in/brunohenriquec/">brunohenriquec</a>
-- Instagram: <a href="https://www.instagram.com/theriquebruno/">@theriquebruno</a>
-- Facebook: <a href="https://www.facebook.com/share/19ZgpnjHjh/">Bruno Henrique</a>
 - Portfólio: <a href="https://rique-bruno.vercel.app/">Bruno Henrique</a>
 
 ##
@@ -49,6 +42,3 @@
 <br>
 <br>
 
-##
-
-  <div bgcolor='blue' align='right'><img  src='https://pa1.aminoapps.com/7723/2f0bed852ed0ddb3b4bad7c6a4d80d5fe2a842e0r1-540-300_hq.gif' alt='github' height='200'></div>
