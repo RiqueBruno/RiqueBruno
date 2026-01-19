@@ -4,7 +4,7 @@
 - 👦🏽 Pronouns: Ele/Dele / He/Him
 - Email: riquebrunotrabalhos@gmail.com
 - Linkedin: <a href="https://www.linkedin.com/in/brunohenriquec/">brunohenriquec</a>
-- Portfólio: <a href="https://rique-bruno.vercel.app/">Bruno Henrique</a>
+- Portfólio: <a href="https://rique-bruno.vercel.app/">Clique aqui!</a>
 
 ##
 
