@@ -6,6 +6,7 @@ export type ThemeButtonProps = {
 function ThemeButton({ darkMode, handleThemeChange }: ThemeButtonProps) {
   return (
     <button
+      aria-label="Mudar o tema entre dark/light."
       onClick={handleThemeChange}
       className="h-10 w-10 rounded-full flex items-center justify-center bg-link p-2"
     >

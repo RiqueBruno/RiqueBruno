@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import ThemeButton from '../ThemeButton/ThemeButton';
+import { useEffect, useState } from "react";
+import ThemeButton from "../ThemeButton/ThemeButton";
 
 type MenuProps = {
   darkMode: boolean;
@@ -18,18 +18,18 @@ export default function Menu({
   aClassName,
   handlerCloseMenu,
 }: MenuProps) {
-  const [activeLink, setActiveLink] = useState<string>('home');
+  const [activeLink, setActiveLink] = useState<string>("home");
 
   const sections = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'Sobre' },
-    { id: 'projects', label: 'Projetos' },
-    { id: 'skills', label: 'Tecnologias' },
-    { id: 'contact', label: 'Contato' },
+    { id: "home", label: "Home" },
+    { id: "about", label: "Sobre" },
+    { id: "projects", label: "Projetos" },
+    { id: "skills", label: "Tecnologias" },
+    { id: "contact", label: "Contato" },
   ];
 
   const handleScroll = () => {
-    let currentSection = 'home';
+    let currentSection = "home";
     sections.forEach((section) => {
       const element = document.getElementById(section.id);
       if (element) {
@@ -46,9 +46,9 @@ export default function Menu({
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [activeLink]);
 
@@ -59,7 +59,7 @@ export default function Menu({
           <a
             href={`#${item.id}`}
             className={`${aClassName} ${
-              activeLink === item.id ? 'text-primary' : ''
+              activeLink === item.id ? "text-primary" : ""
             }`}
             onClick={() => {
               setActiveLink(item.id);

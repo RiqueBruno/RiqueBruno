@@ -1,9 +1,9 @@
-import { GrDeploy } from 'react-icons/gr';
-import { IoLogoFigma } from 'react-icons/io5';
-import { FaCode } from 'react-icons/fa';
+import { GrDeploy } from "react-icons/gr";
+import { IoLogoFigma } from "react-icons/io5";
+import { FaCode } from "react-icons/fa";
 
 type LinkCardProps = {
-  type: 'Deploy' | 'Code' | 'Design';
+  type: "Deploy" | "Code" | "Design";
   link: string;
 };
 
@@ -17,6 +17,7 @@ export default function LinkCard({ type, link }: LinkCardProps) {
   return (
     <a
       href={link}
+      aria-label={`Acessar o ${type} do projeto`}
       target="_blank"
       rel="noopener noreferrer"
       className="dark:bg-btnCard-dark dark:hover:bg-btnCard-lightHover bg-btnCard-light hover:bg-btnCard-lightHover rounded-md p-2 dark:text-primary flex justify-center items-center space-x-1 mb-2"

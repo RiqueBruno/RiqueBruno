@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import LinkCard from '../LinkCard/LinkCard';
-import TechIcon from '../Skill/Skill';
-import { TechName } from '../Skill/Skill';
-import { IoExpand } from 'react-icons/io5';
-import '../../styles/Bg.css';
-import '../../styles/scroll.css';
+import { useState } from "react";
+import LinkCard from "../LinkCard/LinkCard";
+import TechIcon from "../Skill/Skill";
+import { TechName } from "../Skill/Skill";
+import { IoExpand } from "react-icons/io5";
+import "../../styles/Bg.css";
+import "../../styles/scroll.css";
 
 type ProjectProps = {
   id: number;
@@ -52,6 +52,7 @@ export default function CardProject({
             className="h-full w-full object-contain"
           />
           <button
+            aria-label="Expandir Imagem do projeto"
             onClick={() => {
               setProjectId(id);
               setImageOpen(true);
@@ -68,7 +69,11 @@ export default function CardProject({
           <p className="scrollbar overflow-y-auto md:text-sm lg:text-xs max-h-40 h-40 lg:max-h-16 xl:h-24">
             {isExpanded ? description : truncatedDescription}
             {description.length > 200 && (
-              <button onClick={handleToggleExpand} className="ml-2">
+              <button
+                aria-label="Ver mais / ver menos detalhes do projeto"
+                onClick={handleToggleExpand}
+                className="ml-2"
+              >
                 {isExpanded ? (
                   <strong className="text-primary">Ver menos</strong>
                 ) : (

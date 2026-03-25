@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
-import brunoImage from '../../assets/images/foto.webp';
-import LinkMenu from '../LinkMenu/LinkMenu';
-import '../../styles/animationScroll.css';
+import { useEffect, useState } from "react";
+import brunoImage from "../../assets/images/foto.webp";
+import LinkMenu from "../LinkMenu/LinkMenu";
+import "../../styles/animationScroll.css";
 
 export default function About() {
   const [_visible, setVisible] = useState(false);
@@ -9,20 +9,20 @@ export default function About() {
   const myObserver = new IntersectionObserver(
     (entries: IntersectionObserverEntry[]) => {
       const entry = entries[0];
-      const image = document.getElementById('anil');
-      const text = document.getElementById('anir');
+      const image = document.getElementById("anil");
+      const text = document.getElementById("anir");
       if (entry.isIntersecting) {
-        image?.classList.add('left-center');
-        text?.classList.add('right-center');
+        image?.classList.add("left-center");
+        text?.classList.add("right-center");
         setVisible(true);
       } else {
         setVisible(false);
       }
-    }
+    },
   );
 
   useEffect(() => {
-    const aboutElement = document.getElementById('about');
+    const aboutElement = document.getElementById("about");
     if (aboutElement) {
       myObserver.observe(aboutElement);
     }
@@ -36,7 +36,6 @@ export default function About() {
     <section className="bg-primary dark:bg-secondary-light overflow-hidden relative flex flex-col lg:flex-row justify-center items-center p-10 h-screen">
       <div id="about" className="absolute top-0 h-full w-full z-[0]" />
       <div className="lg:flex lg:flex-row lg:items-center lg:justify-around w-full lg:space-x-10">
-        <meta name="description" content="Imagem de Bruno" />
         <div
           id="anil"
           className="hidden lg:block rounded-full overflow-hidden h-72 w-72 lg:h-80 lg:w-80 border-2 border-primary z-50 shadow-md"
@@ -52,12 +51,10 @@ export default function About() {
           className="flex flex-col items-center justify-center dark:text-text-dark text-text-light lg:items-start space-x-4"
         >
           <LinkMenu text="Sobre mim" emote="👨‍💻" id="" />
-          <meta name="description" content="Página sobre mim" />
           <h2 className="text-3xl w-full text-center lg:text-start">
             Construindo o futuro, uma linha de código por vez.
           </h2>
           <div className="w-full text-center lg:text-start">
-            <meta name="description" content="Sobre mim" />
             <ul className="mt-4 space-y-2 text-base list-none lg:text-start">
               <li>
                 👋 Me chamo Bruno Henrique Cardoso, mas pode me chamar apenas de

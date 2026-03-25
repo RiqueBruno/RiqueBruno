@@ -1,17 +1,17 @@
-import React from 'react';
-import emailjs from '@emailjs/browser';
-import Swal from 'sweetalert2';
+import React from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 export default function Form() {
-  const [name, setName] = React.useState('');
-  const [email, setEmail] = React.useState('');
-  const [message, setMessage] = React.useState('');
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const templateParams = {
       from_name: name,
-      to_name: 'Bruno',
+      to_name: "Bruno",
       message: message,
       email: email,
     };
@@ -19,35 +19,35 @@ export default function Form() {
     const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     if (!isValidEmail || name.length < 2 || message.length < 10) {
       Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Preencha todos os campos corretamente!',
+        icon: "error",
+        title: "Oops...",
+        text: "Preencha todos os campos corretamente!",
       });
       return;
     }
 
     emailjs
       .send(
-        'service_qvglc8o',
-        'template_kbx9xlc',
+        "service_qvglc8o",
+        "template_kbx9xlc",
         templateParams,
-        'GFkOQHbPuJ9a7xxXY'
+        "GFkOQHbPuJ9a7xxXY",
       )
       .then(() => {
         Swal.fire({
-          title: 'Tudo certo!',
-          text: 'Logo entrarei em contato!',
-          icon: 'success',
+          title: "Tudo certo!",
+          text: "Logo entrarei em contato!",
+          icon: "success",
         });
-        setName('');
-        setEmail('');
-        setMessage('');
+        setName("");
+        setEmail("");
+        setMessage("");
       })
       .catch((error) => {
         Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Algo deu errado!',
+          icon: "error",
+          title: "Oops...",
+          text: "Algo deu errado!",
           footer: `Error: ${error}`,
         });
       });
@@ -58,7 +58,7 @@ export default function Form() {
       className="absolute right-2 text-lg invalid"
       style={
         {
-          '--content': `'${content}'`,
+          "--content": `'${content}'`,
         } as React.CSSProperties
       }
     >
@@ -74,7 +74,7 @@ export default function Form() {
         className="flex flex-col p-4 space-y-8 items-start justify-center w-[84%]"
       >
         <div className="w-full relative h-12 div-label">
-          {name.length < 2 && validate('Nome deve ter pelo menos 2 caracteres')}
+          {name.length < 2 && validate("Nome deve ter pelo menos 2 caracteres")}
           <input
             type="text"
             id="name"
@@ -83,7 +83,7 @@ export default function Form() {
             required
             onChange={(event) => setName(event.target.value)}
             className={
-              'dark:bg-background-dark bg-background-light dark:text-text-dark text-text-light border-2 border-primary rounded-lg p-2 w-full h-full'
+              "dark:bg-background-dark bg-background-light dark:text-text-dark text-text-light border-2 border-primary rounded-lg p-2 w-full h-full"
             }
           />
           <label
@@ -95,7 +95,7 @@ export default function Form() {
         </div>
         <div className="w-full relative h-12 div-label">
           {!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) &&
-            validate('Email deve ser no formato: email@email.com')}
+            validate("Email deve ser no formato: email@email.com")}
           <input
             type="text"
             id="email"
@@ -114,7 +114,7 @@ export default function Form() {
         </div>
         <div className="w-full relative max-h-44 div-label">
           {message.length < 10 &&
-            validate('Mensagem deve ter pelo menos 10 caracteres')}
+            validate("Mensagem deve ter pelo menos 10 caracteres")}
           <textarea
             id="message"
             name="message"
@@ -131,6 +131,7 @@ export default function Form() {
           </label>
         </div>
         <button
+          aria-label="para enviar sua mensagem."
           type="submit"
           className="w-full bg-gradient-to-r from-secondary-light to-primary hover:from-primary hover:to-secondary-light text-text-dark dark:hover:from-secondary-dark dark:hover:to-primary-dark p-2 rounded-lg"
         >

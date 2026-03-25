@@ -1,4 +1,4 @@
-import SocialMedia from '../SocialMedia/SocialMedia';
+import SocialMedia from "../SocialMedia/SocialMedia";
 
 type FooterProps = {
   darkMode: boolean;
@@ -10,7 +10,6 @@ export default function Footer({ darkMode }: FooterProps) {
       <h2>Copyright © Bruno H. Cardoso · 2024</h2>
       <ul className="flex space-x-4">
         <li>
-          <meta name="description" content="Botão para perfil linkedin" />
           <SocialMedia
             type="Linkedin"
             darkMode={darkMode}
@@ -20,7 +19,6 @@ export default function Footer({ darkMode }: FooterProps) {
           />
         </li>
         <li>
-          <meta name="description" content="Botão para perfil github" />
           <SocialMedia
             type="Github"
             darkMode={darkMode}
@@ -30,7 +28,6 @@ export default function Footer({ darkMode }: FooterProps) {
           />
         </li>
         <li>
-          <meta name="description" content="Botão para perfil whatsapp" />
           <SocialMedia
             type="Whatsapp"
             darkMode={darkMode}

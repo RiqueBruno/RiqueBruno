@@ -24,7 +24,6 @@ export default function Home({ darkMode }: HomeProps) {
           </div>
           <div className="text-center lg:text-start space-y-4 z-[1000]">
             <LinkMenu text="Saudações!" emote="👋" id="" />
-            <meta name="author" content="Bruno Henrique" />
             <h1 className="lg:text-5xl text-3xl font-bold z-[100]">
               Bruno&nbsp;
               <br className="hidden lg:block" />
@@ -34,10 +33,6 @@ export default function Home({ darkMode }: HomeProps) {
               Full Stack Júnior | React.js, NodeJs, Java | CS Student
             </h2>
             <div className="lg:space-x-4 flex justify-around lg:justify-start lg:items-start lg:px-0 w-full px-10 space-x-2 z-[100]">
-              <meta
-                name="author"
-                content="Botão para perfil do linkedin de Bruno."
-              />
               <SocialMedia
                 darkMode={darkMode}
                 type="Linkedin"
@@ -45,20 +40,12 @@ export default function Home({ darkMode }: HomeProps) {
                 location="home"
                 linkTo="https://www.linkedin.com/in/brunohenriquec"
               />
-              <meta
-                name="author"
-                content="Botão para perfil do github de Bruno."
-              />
               <SocialMedia
                 darkMode={darkMode}
                 type="Github"
                 size={30}
                 location="home"
                 linkTo="https://github.com/RiqueBruno"
-              />
-              <meta
-                name="author"
-                content="Botão para iniciar uma conversa no whatsapp com Bruno."
               />
               <SocialMedia
                 darkMode={darkMode}
@@ -72,7 +59,6 @@ export default function Home({ darkMode }: HomeProps) {
         </div>
 
         <div className="justify-center items-center hidden lg:flex">
-          <meta name="author" content="Avatar de Bruno." />
           <div className="h-[28rem] w-[30rem]">
             <AvatarHome darkMode={darkMode} />
           </div>
