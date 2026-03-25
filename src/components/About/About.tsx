@@ -62,13 +62,10 @@ export default function About() {
               </li>
               <li>
                 👨‍💻 Desenvolvendo e programando interfaces com JavaScript, React
-                JS e Typescript desde 2023.
+                JS e Typescript, node.js e java desde 2023.
               </li>
               <li>🎓 Formado em Desenvolvimento Web Full-Stack pela Trybe.</li>
-              <li>
-                💡 Interesses em desenvolvimento Front-end com React e UX/UI
-                Design.
-              </li>
+              <li>🎓 Estudante de CS.</li>
               <li>
                 🚀 Tentando ser um pouquinho melhor do que ontem todos os dias.
               </li>
