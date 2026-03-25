@@ -1,9 +1,9 @@
-import TechIcon from '../Skill/Skill';
+import TechIcon from "../Skill/Skill";
 
 type SocialMediaProps = {
-  type: 'Whatsapp' | 'Linkedin' | 'Github';
+  type: "Whatsapp" | "Linkedin" | "Github";
   size: number;
-  location: 'home' | 'footer';
+  location: "home" | "footer";
   linkTo: string;
   darkMode: boolean;
 };
@@ -18,15 +18,15 @@ export default function SocialMedia({
   return (
     <a
       href={linkTo}
+      aria-label={`Acessar meu perfil no ${type}`}
       className={`${
-        location === 'home' ? 'bg-primary' : 'bg-secondary'
+        location === "home" ? "bg-primary" : "bg-secondary"
       } rounded-full w-12 h-12 flex justify-center items-center dark:hover:bg-text-dark hover:bg-text-light transition-all`}
     >
-      <meta name="description" content={`Botão para perfil ${type}`} />
       <TechIcon
         name={type}
         size={size}
-        color={darkMode ? '#500742' : 'white'}
+        color={darkMode ? "#500742" : "white"}
       />
     </a>
   );

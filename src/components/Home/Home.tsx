@@ -1,9 +1,9 @@
-import SliderHome from '../SliderHome/SliderHome';
-import BgHome from '../BgHome/BgHome';
-import AvatarHome from '../AvatarHome/AvatarHome';
-import LinkMenu from '../LinkMenu/LinkMenu';
-import brunoImage from '../../assets/images/foto.webp';
-import SocialMedia from '../SocialMedia/SocialMedia';
+import SliderHome from "../SliderHome/SliderHome";
+import BgHome from "../BgHome/BgHome";
+import AvatarHome from "../AvatarHome/AvatarHome";
+import LinkMenu from "../LinkMenu/LinkMenu";
+import brunoImage from "../../assets/images/foto.webp";
+import SocialMedia from "../SocialMedia/SocialMedia";
 
 type HomeProps = {
   darkMode: boolean;
@@ -31,7 +31,7 @@ export default function Home({ darkMode }: HomeProps) {
               Henrique
             </h1>
             <h2 className="lg:text-2xl text-base z-[100]">
-              Front-end developer · UI designer
+              Full Stack Júnior | React.js, NodeJs, Java | CS Student
             </h2>
             <div className="lg:space-x-4 flex justify-around lg:justify-start lg:items-start lg:px-0 w-full px-10 space-x-2 z-[100]">
               <meta
