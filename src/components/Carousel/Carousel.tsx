@@ -20,16 +20,13 @@ export default function Carousel({
 }: CarouselProps) {
   return (
     <Swiper
+      slidesPerView={1}
       spaceBetween={30}
       loop={true}
       pagination={{ clickable: true }}
       navigation={true}
       modules={[Pagination, Navigation]}
-      className="w-full max-w-6xl py-8 h-96"
-      breakpoints={{
-        320: { slidesPerView: 1 },
-        1024: { slidesPerView: 2 },
-      }}
+      className="w-full max-w-6xl py-8 px-2 h-full"
       style={
         {
           "--swiper-pagination-color": "#E11D48",

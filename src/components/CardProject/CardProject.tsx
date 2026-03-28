@@ -42,14 +42,19 @@ export default function CardProject({
       ? `${description.substring(0, 200)}...`
       : description;
 
+  const mobileTruncatedDescription =
+    description.length > 100
+      ? `${description.substring(0, 100)}...`
+      : description;
+
   return (
-    <article className="h-full w-72 md:h-[90%] lg:h-[90%] xl:w-[32rem] xl:h-[32rem] lg:w-[32rem] flex-none rounded-md border-2 border-primary-light relative dark:text-text-dark text-text-light">
-      <div className="w-full h-full dark:bg-card-dark flex flex-col justify-center items-center z-[50] p-2">
-        <div className="z-[51] h-[24%] lg:h-16 w-full mb-4 relative">
+    <article className="h-full py-4 w-full flex-none px-4 md:px-16 lg:px-20 rounded-md border-2 border-primary-light relative dark:text-text-dark text-text-light overflow-hidden">
+      <div className="w-full h-full dark:bg-card-dark flex flex-col md:flex-row justify-between md:justify-start items-center md:items-stretch z-[50] p-2 md:p-6 md:gap-8">
+        <div className="z-[51] h-[20%] md:h-full w-full md:w-2/5 mb-2 md:mb-0 relative flex items-center justify-center bg-black/5 dark:bg-black/20 rounded-xl p-2 md:p-4 flex-shrink-0">
           <img
             src={image}
             alt={title}
-            className="h-full w-full object-contain"
+            className="h-full w-full object-contain drop-shadow-md"
           />
           <button
             aria-label="Expandir Imagem do projeto"
@@ -57,49 +62,56 @@ export default function CardProject({
               setProjectId(id);
               setImageOpen(true);
             }}
-            className="top-0 right-10 absolute cursor-pointer text-text-light lg:text-3xl dark:text-primary"
+            className="top-2 right-2 md:top-4 md:right-4 absolute cursor-pointer text-text-light text-xl lg:text-3xl dark:text-primary bg-black/40 hover:bg-primary transition-colors rounded-full p-1.5 md:p-2"
           >
             <IoExpand />
           </button>
         </div>
-        <header className="z-[51] text-2xl mb-2 lg:mb-2 xl:mb-4">
-          <h3>{title}</h3>
-        </header>
-        <div className="z-[51] text-sm text-center mb-2 lg:mb-2 xl:mb-8 border-b-2 border-transparent w-[80%] opacity-70 pb-2">
-          <p className="scrollbar overflow-y-auto md:text-sm lg:text-xs max-h-40 h-40 lg:max-h-16 xl:h-24">
-            {isExpanded ? description : truncatedDescription}
-            {description.length > 200 && (
-              <button
-                aria-label="Ver mais / ver menos detalhes do projeto"
-                onClick={handleToggleExpand}
-                className="ml-2"
-              >
-                {isExpanded ? (
-                  <strong className="text-primary">Ver menos</strong>
-                ) : (
-                  <strong className="text-primary">Ver mais</strong>
-                )}
-              </button>
+
+        <div className="z-[51] w-full md:w-3/5 h-[80%] md:h-full flex flex-col justify-between items-center md:items-start">
+          <header className="mb-1 md:mb-4 text-center md:text-left w-full mt-1 md:mt-0">
+            <h3 className="text-lg md:text-3xl font-bold truncate">{title}</h3>
+          </header>
+
+          <div className="text-xs md:text-base text-center md:text-left mb-2 md:mb-6 w-[95%] md:w-full opacity-70 pb-2 flex-1 overflow-hidden flex flex-col">
+            <p className="scrollbar overflow-y-auto md:text-sm lg:text-base h-full hidden md:block md:pr-4">
+              {isExpanded ? description : truncatedDescription}
+              {description.length > 200 && (
+                <button
+                  aria-label="Ver mais / ver menos detalhes do projeto"
+                  onClick={handleToggleExpand}
+                  className="ml-2"
+                >
+                  <strong className="text-primary">
+                    {isExpanded ? "Ver menos" : "Ver mais"}
+                  </strong>
+                </button>
+              )}
+            </p>
+            <p className="scrollbar overflow-y-auto text-xs h-full block md:hidden">
+              {description}
+            </p>
+          </div>
+
+          <div className="border-b-2 border-transparent md:border-gray-200 md:dark:border-gray-800 w-full flex flex-wrap justify-center md:justify-start gap-2 md:gap-4 mb-2 md:mb-6 md:pb-4">
+            <LinkCard link={deployLink} type="Deploy" />
+            <LinkCard link={codeLink} type="Code" />
+            {designLink.length > 5 && (
+              <LinkCard link={designLink} type="Design" />
             )}
-          </p>
-        </div>
-        <div className="z-[51] border-b-2 border-transparent w-[90%] lg:w-[80%] flex justify-around lg:mb-2 mb-4">
-          <LinkCard link={deployLink} type="Deploy" />
-          <LinkCard link={codeLink} type="Code" />
-          {designLink.length > 5 && (
-            <LinkCard link={designLink} type="Design" />
-          )}
-        </div>
-        <div className="z-[51] flex flex-wrap w-[90%] opacity-50 justify-center lg:mt-2 xl:mt-4">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="flex flex-col text-xs xl:text-base justify-center items-center text-center space-y-1 mb-2 mr-4 dark:text-text-dark"
-            >
-              <TechIcon name={skill} color="" />
-              <p>{skill}</p>
-            </div>
-          ))}
+          </div>
+
+          <div className="flex flex-wrap w-full opacity-50 justify-center md:justify-start overflow-y-auto max-h-12 md:max-h-20 scrollbar gap-x-3 gap-y-1 md:gap-x-4 md:mt-auto">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="flex flex-col text-[10px] md:text-xs xl:text-sm justify-center items-center text-center space-y-1 dark:text-text-dark"
+              >
+                <TechIcon name={skill} color="" />
+                <p>{skill}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div className="dark:bg-card-cardbg blur-[100px] h-full w-full absolute z-[0] left-0 top-0" />

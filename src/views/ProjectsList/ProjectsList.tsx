@@ -18,16 +18,15 @@ export default function ProjectsList({
   setProjectId,
 }: ProjectProps) {
   return (
-    <section className="h-screen w-screen relative flex flex-col items-start lg:items-center justify-center p-4">
+    <section className="h-screen w-screen mb-12 relative flex flex-col items-start lg:items-center justify-center p-4">
       <div
         id="projects"
         className="absolute top-0 left-0 w-full h-full z-[0]"
       />
       <header className="w-full flex flex-col items-center justify-center dark:text-text-dark space-y-4 mt-10">
-        <LinkMenu text="Projetos" id="" emote="🔗" />
         <h2 className="text-3xl w-full text-center">Meus Projetos</h2>
       </header>
-      <div className="h-[70%] w-[80%] m-auto flex items-center rounded-lg z-[20]">
+      <div className="h-full w-[80%] m-auto flex items-center rounded-lg z-[20] md:px-10">
         <Carousel
           arrProjects={projects}
           setImageOpen={setImageOpen}

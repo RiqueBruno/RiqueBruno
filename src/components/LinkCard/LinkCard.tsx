@@ -22,8 +22,8 @@ export default function LinkCard({ type, link }: LinkCardProps) {
       rel="noopener noreferrer"
       className="dark:bg-btnCard-dark dark:hover:bg-btnCard-lightHover bg-btnCard-light hover:bg-btnCard-lightHover rounded-md p-2 dark:text-primary flex justify-center items-center space-x-1 mb-2"
     >
-      <Icon size={15} />
-      <span className="text-sm dark:opacity-80">{type}</span>
+      <Icon size={15} className="hidden md:block" />
+      <span className="text-xs md:text-sm dark:opacity-80">{type}</span>
     </a>
   );
 }
