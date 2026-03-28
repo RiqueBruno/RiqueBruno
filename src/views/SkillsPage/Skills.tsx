@@ -1,5 +1,5 @@
-import LinkMenu from "../LinkMenu/LinkMenu";
-import Skill, { TechName } from "../Skill/Skill";
+import LinkMenu from "../../components/LinkMenu/LinkMenu";
+import Skill, { TechName } from "../../components/Skill/Skill";
 
 export default function Skills() {
   const arrSkills: TechName[] = [

@@ -1,8 +1,8 @@
 import projects from "../../utils/Projects";
-import LinkMenu from "../LinkMenu/LinkMenu";
-import ImagePreview from "../ImagePreview/ImagePreview";
+import LinkMenu from "../../components/LinkMenu/LinkMenu";
+import ImagePreview from "../../components/ImagePreview/ImagePreview";
 import "../../styles/scroll.css";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../../components/Carousel/Carousel";
 
 type ProjectProps = {
   imageOpen: boolean;

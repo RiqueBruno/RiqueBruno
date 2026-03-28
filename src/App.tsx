@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import Header from './components/Header/Header';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import ProjectsList from './components/ProjectsList/ProjectsList';
-import Skills from './components/SkillsPage/Skills';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
+import { useState } from "react";
+import Header from "./components/Header/Header";
+import Home from "./views/Home/Home";
+import About from "./views/About/About";
+import ProjectsList from "./views/ProjectsList/ProjectsList";
+import Skills from "./views/SkillsPage/Skills";
+import Contact from "./views/Contact/Contact";
+import Footer from "./views/Footer/Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -19,7 +19,7 @@ function App() {
   return (
     <div
       className={`${
-        darkMode && 'dark'
+        darkMode && "dark"
       } w-screen dark:bg-background-dark bg-secondary`}
     >
       <main className="dark:bg-background-dark bg-background-light h-full w-screen overflow-x-hidden">

@@ -1,9 +1,9 @@
-import SliderHome from "../SliderHome/SliderHome";
-import BgHome from "../BgHome/BgHome";
-import AvatarHome from "../AvatarHome/AvatarHome";
-import LinkMenu from "../LinkMenu/LinkMenu";
+import SliderHome from "../../components/SliderHome/SliderHome";
+import BgHome from "../../components/BgHome/BgHome";
+import AvatarHome from "../../components/AvatarHome/AvatarHome";
+import LinkMenu from "../../components/LinkMenu/LinkMenu";
 import brunoImage from "../../assets/images/foto.webp";
-import SocialMedia from "../SocialMedia/SocialMedia";
+import SocialMedia from "../../components/SocialMedia/SocialMedia";
 
 type HomeProps = {
   darkMode: boolean;

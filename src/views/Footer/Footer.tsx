@@ -1,4 +1,4 @@
-import SocialMedia from "../SocialMedia/SocialMedia";
+import SocialMedia from "../../components/SocialMedia/SocialMedia";
 
 type FooterProps = {
   darkMode: boolean;

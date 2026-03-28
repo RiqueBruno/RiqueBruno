@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import brunoImage from "../../assets/images/foto.webp";
-import LinkMenu from "../LinkMenu/LinkMenu";
+import LinkMenu from "../../components/LinkMenu/LinkMenu";
 import "../../styles/animationScroll.css";
 
 export default function About() {
