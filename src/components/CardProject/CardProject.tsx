@@ -42,11 +42,6 @@ export default function CardProject({
       ? `${description.substring(0, 200)}...`
       : description;
 
-  const mobileTruncatedDescription =
-    description.length > 100
-      ? `${description.substring(0, 100)}...`
-      : description;
-
   return (
     <article className="h-full py-4 w-full flex-none px-4 md:px-16 lg:px-20 rounded-md border-2 border-primary-light relative dark:text-text-dark text-text-light overflow-hidden">
       <div className="w-full h-full dark:bg-card-dark flex flex-col md:flex-row justify-between md:justify-start items-center md:items-stretch z-[50] p-2 md:p-6 md:gap-8">
