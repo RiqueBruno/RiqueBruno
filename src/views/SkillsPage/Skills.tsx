@@ -25,7 +25,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="h-screen w-full relative dark:text-text-dark text-text-light flex flex-col items-center justify-center overflow-hidden">
+    <section className="h-screen w-full md:pb-24 relative dark:text-text-dark text-text-light flex flex-col items-center justify-center overflow-hidden">
       <div
         className="absolute h-full w-full inset-0 border-x-2 border-primary rounded-lg z-[0]"
         id="skills"
