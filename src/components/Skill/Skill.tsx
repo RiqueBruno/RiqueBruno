@@ -1,5 +1,5 @@
-import React from 'react';
-import { IconType } from 'react-icons';
+import React from "react";
+import { IconType } from "react-icons";
 import {
   FaReact,
   FaNodeJs,
@@ -8,7 +8,8 @@ import {
   FaGithub,
   FaLinkedin,
   FaWhatsapp,
-} from 'react-icons/fa';
+  FaJava,
+} from "react-icons/fa";
 import {
   SiJavascript,
   SiTypescript,
@@ -20,32 +21,35 @@ import {
   SiRedux,
   SiVite,
   SiInsomnia,
-} from 'react-icons/si';
-import { RiNextjsFill } from 'react-icons/ri';
-import { DiSass, DiPhotoshop, DiIllustrator } from 'react-icons/di';
+  SiMysql,
+} from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
+import { DiSass, DiPhotoshop, DiIllustrator } from "react-icons/di";
 
 export type TechName =
-  | 'JavaScript'
-  | 'React'
-  | 'Node'
-  | 'TypeScript'
-  | 'HTML5'
-  | 'CSS'
-  | 'Tailwind'
-  | 'Git'
-  | 'Figma'
-  | 'Photoshop'
-  | 'Illustrator'
-  | 'Nextjs'
-  | 'Insomnia'
-  | 'Docker'
-  | 'Vite'
-  | 'Postman'
-  | 'Redux'
-  | 'SASS'
-  | 'Github'
-  | 'Linkedin'
-  | 'Whatsapp';
+  | "JavaScript"
+  | "React"
+  | "Node"
+  | "TypeScript"
+  | "HTML5"
+  | "CSS"
+  | "Tailwind"
+  | "Git"
+  | "Figma"
+  | "Photoshop"
+  | "Illustrator"
+  | "Nextjs"
+  | "Insomnia"
+  | "Docker"
+  | "Vite"
+  | "Postman"
+  | "Redux"
+  | "SASS"
+  | "Github"
+  | "Linkedin"
+  | "Whatsapp"
+  | "Java"
+  | "MySQL";
 
 const iconMap: Record<TechName, IconType> = {
   JavaScript: SiJavascript,
@@ -69,6 +73,8 @@ const iconMap: Record<TechName, IconType> = {
   Github: FaGithub,
   Linkedin: FaLinkedin,
   Whatsapp: FaWhatsapp,
+  Java: FaJava,
+  MySQL: SiMysql,
 };
 
 interface TechIconProps {
@@ -77,7 +83,7 @@ interface TechIconProps {
   color?: string;
 }
 
-const TechIcon: React.FC<TechIconProps> = ({ name, size, color = '' }) => {
+const TechIcon: React.FC<TechIconProps> = ({ name, size, color = "" }) => {
   const IconComponent = iconMap[name];
 
   return <IconComponent size={size} color={color} />;
