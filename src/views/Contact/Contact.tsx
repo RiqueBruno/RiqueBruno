@@ -8,25 +8,31 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="w-screen h-screen flex flex-col items-center justify-center text-text-light dark:text-text-dark space-y-16"
+      className="w-full h-[100dvh] flex flex-col items-center justify-between py-6 text-text-light dark:text-text-dark overflow-hidden"
     >
-      <header className="w-full flex flex-col items-center justify-center space-y-4">
+      <header className="w-full flex flex-col items-center justify-center gap-2">
         <LinkMenu emote="📫" text="Contato" id="" />
-        <h2 className="text-3xl">Contato</h2>
+        <h2 className="text-2xl lg:text-3xl font-bold">Contato</h2>
       </header>
-      <div className="flex justify-center items-center space-x-4 w-[80%]">
-        <div className="hidden w-[50%] lg:flex items-center justify-center">
-          <img src={contactMe} alt="Entre em contato comigo." />
+
+      <div className="flex-1 flex flex-col lg:flex-row justify-center items-center gap-4 w-[90%] max-w-5xl min-h-0">
+        <div className="hidden lg:flex w-1/2 h-full items-center justify-center p-4">
+          <img
+            src={contactMe}
+            alt="Entre em contato comigo."
+            className="max-h-full object-contain drop-shadow-lg"
+          />
         </div>
-        <div className="lg:w-[50%] w-full">
+        <div className="w-full lg:w-1/2 flex justify-center items-center h-full">
           <Form />
         </div>
       </div>
-      <div className="w-full h-28 flex justify-center items-end">
+
+      <div className="w-full flex justify-center pb-2 mt-auto">
         <a
           aria-label="voltar para o topo da página."
           href="#home"
-          className="flex space-x-2 justify-center items-center text-link text-base dark:border-link dark:border-none border-2 dark:bg-background-dark p-2 rounded-lg"
+          className="flex space-x-2 justify-center items-center text-link text-sm lg:text-base dark:border-none border-2 dark:bg-background-dark p-2 rounded-lg transition-transform hover:scale-105"
         >
           <span>Voltar ao topo</span> <FaArrowUp />
         </a>

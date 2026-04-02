@@ -67,11 +67,11 @@ export default function Form() {
   );
 
   return (
-    <section className="w-full h-full flex justify-center lg:justify-start items-center">
+    <section className="w-full flex justify-center items-center">
       <form
         method="POST"
         onSubmit={handleSubmit}
-        className="flex flex-col p-4 space-y-8 items-start justify-center w-[84%]"
+        className="flex flex-col gap-4 lg:gap-6 w-full max-w-md px-2"
       >
         <div className="w-full relative h-12 div-label">
           {name.length < 2 && validate("Nome deve ter pelo menos 2 caracteres")}
@@ -82,17 +82,16 @@ export default function Form() {
             value={name}
             required
             onChange={(event) => setName(event.target.value)}
-            className={
-              "dark:bg-background-dark bg-background-light dark:text-text-dark text-text-light border-2 border-primary rounded-lg p-2 w-full h-full"
-            }
+            className="dark:bg-background-dark bg-background-light dark:text-text-dark text-text-light border-2 border-primary rounded-lg p-2 w-full h-full outline-none focus:border-secondary-light"
           />
           <label
             htmlFor="name"
-            className="label-label dark:bg-background-dark bg-background-light px-1"
+            className="label-label dark:bg-background-dark bg-background-light px-1 absolute"
           >
             Nome
           </label>
         </div>
+
         <div className="w-full relative h-12 div-label">
           {!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) &&
             validate("Email deve ser no formato: email@email.com")}
@@ -103,16 +102,17 @@ export default function Form() {
             value={email}
             required
             onChange={(event) => setEmail(event.target.value)}
-            className="dark:bg-background-dark bg-background-light dark:text-text-dark text-text-light border-2 border-primary rounded-lg w-full h-full"
+            className="dark:bg-background-dark bg-background-light dark:text-text-dark text-text-light border-2 border-primary rounded-lg p-2 w-full h-full outline-none focus:border-secondary-light"
           />
           <label
             htmlFor="email"
-            className="label-label dark:bg-background-dark bg-background-light px-1"
+            className="label-label dark:bg-background-dark bg-background-light px-1 absolute"
           >
             Email
           </label>
         </div>
-        <div className="w-full relative max-h-44 div-label">
+
+        <div className="w-full relative h-28 lg:h-32 div-label">
           {message.length < 10 &&
             validate("Mensagem deve ter pelo menos 10 caracteres")}
           <textarea
@@ -121,19 +121,20 @@ export default function Form() {
             value={message}
             required
             onChange={(event) => setMessage(event.target.value)}
-            className="dark:bg-background-dark bg-background-light dark:text-text-dark text-text-light border-2 border-primary rounded-lg p-2 w-full h-full max-h-44 resize-none"
+            className="dark:bg-background-dark bg-background-light dark:text-text-dark text-text-light border-2 border-primary rounded-lg p-2 w-full h-full resize-none outline-none focus:border-secondary-light"
           ></textarea>
           <label
             htmlFor="message"
-            className="label-label dark:bg-background-dark bg-background-light px-1"
+            className="label-label dark:bg-background-dark bg-background-light px-1 absolute"
           >
             Mensagem
           </label>
         </div>
+
         <button
           aria-label="para enviar sua mensagem."
           type="submit"
-          className="w-full bg-gradient-to-r from-secondary-light to-primary hover:from-primary hover:to-secondary-light text-text-dark dark:hover:from-secondary-dark dark:hover:to-primary-dark p-2 rounded-lg"
+          className="w-full mt-2 bg-gradient-to-r from-secondary-light to-primary hover:from-primary hover:to-secondary-light text-text-dark dark:hover:from-secondary-dark dark:hover:to-primary-dark p-3 rounded-lg font-bold transition-all"
         >
           Enviar
         </button>
