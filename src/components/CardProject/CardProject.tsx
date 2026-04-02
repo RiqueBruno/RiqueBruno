@@ -45,11 +45,11 @@ export default function CardProject({
   return (
     <article className="h-full py-4 w-full flex-none px-4 md:px-16 lg:px-20 rounded-md border-2 border-primary-light relative dark:text-text-dark text-text-light overflow-hidden">
       <div className="w-full h-full dark:bg-card-dark flex flex-col md:flex-row justify-between md:justify-start items-center md:items-stretch z-[50] p-2 md:p-6 md:gap-8">
-        <div className="z-[51] h-[20%] md:h-full w-full md:w-2/5 mb-2 md:mb-0 relative flex items-center justify-center bg-black/5 dark:bg-black/20 rounded-xl p-2 md:p-4 flex-shrink-0">
+        <div className="z-[51] h-[200px] md:h-full w-full md:w-2/5 mb-4 md:mb-0 relative flex items-center justify-center bg-black/5 dark:bg-black/20 rounded-xl p-2 md:p-4 flex-shrink-0 group">
           <img
             src={image}
             alt={title}
-            className="h-full w-full object-contain drop-shadow-md"
+            className="h-full w-full object-contain drop-shadow-xl rounded-md"
           />
           <button
             aria-label="Expandir Imagem do projeto"
@@ -57,7 +57,7 @@ export default function CardProject({
               setProjectId(id);
               setImageOpen(true);
             }}
-            className="top-2 right-2 md:top-4 md:right-4 absolute cursor-pointer text-text-light text-xl lg:text-3xl dark:text-primary bg-black/40 hover:bg-primary transition-colors rounded-full p-1.5 md:p-2"
+            className="bottom-2 right-2 md:bottom-4 md:right-4 absolute cursor-pointer text-text-light text-xl lg:text-3xl dark:text-primary bg-black/40 hover:bg-primary transition-colors rounded-full p-1.5 md:p-2 z-[60]"
           >
             <IoExpand />
           </button>
