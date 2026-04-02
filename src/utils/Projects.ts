@@ -1,10 +1,11 @@
 import { TechName } from "../components/Skill/Skill";
-import basicShopMockup from "../assets/mockup/basicShopMockUp.webp";
+//import basicShopMockup from "../assets/mockup/basicShopMockUp.webp";
 import recipesAppMockup from "../assets/mockup/recipeAppMockUp.webp";
 import ttunesMockup from "../assets/mockup/TTunoAppMockUp.webp";
 import wexpensesMockup from "../assets/mockup/WEAppMockUp.webp";
 import triviaChallengerMockup from "../assets/mockup/triviaAppMockUp.webp";
 import awzMockUp from "../assets/mockup/awzMockUp.webp";
+import mrpChallengeMockup from "../assets/mockup/MRPChallengeMockUp.webp";
 
 export type Project = {
   id: number;
@@ -21,9 +22,9 @@ export type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Site Academia Waleska Zanyor",
+    title: "Site AWZ",
     description:
-      "Site institucional para a academia de dança Waleska Zanyor, onde os usuários podem conhecer os serviços oferecidos, ver fotos e entrar em contato.",
+      "Site institucional para a academia Waleska Zanyor, onde os usuários podem conhecer os serviços oferecidos, ver fotos e entrar em contato.",
     skills: ["React", "TypeScript", "Tailwind", "Nextjs", "Figma"],
     deployLink: "https://acad-w-z.vercel.app/",
     codeLink: "https://github.com/RiqueBruno/acad-w-z",
@@ -34,6 +35,18 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "MRP - Autoflex Challenge",
+    description:
+      "O Autoflex é um sistema completo de gestão e planejamento de necessidades de materiais. Ele foi desenvolvido para resolver o problema clássico de controle de estoque e otimização de produção em fábricas e lanchonetes.",
+    skills: ["React", "TypeScript", "Tailwind", "Java", "MySQL", "Figma"],
+    deployLink: "",
+    codeLink: "https://github.com/RiqueBruno/autoflex-mrp-challenge",
+    designLink: "",
+    image: mrpChallengeMockup,
+    imagePreview: mrpChallengeMockup,
+  },
+  {
+    id: 3,
     title: "Recipes App",
     description:
       "Um aplicativo de receitas. Foi desenvolvio em grupo, durante o curso na Trybe. Com uma interface moderna e responsiva, o usuário pode acompanhar suas receitas favoritas, marcar andamento e salvar nos favoritos.",
@@ -47,7 +60,7 @@ const projects: Project[] = [
     imagePreview: recipesAppMockup,
   },
   {
-    id: 3,
+    id: 4,
     title: "TTunes",
     description:
       "Aplicativo de músicas, onde o usuário pode fazer login, pesquisar, ouvir prévias de músicas e favoritar as que mais gostar.",
@@ -60,7 +73,7 @@ const projects: Project[] = [
     imagePreview: ttunesMockup,
   },
   {
-    id: 4,
+    id: 5,
     title: "WExpenses",
     description:
       "Aplicativo de controle de despesas, onde o usuário pode adicionar, editar e excluir despesas, além de visualizar as despesas totais. O projeto foi desenvolvido durante o curso da Trybe.",
@@ -73,7 +86,7 @@ const projects: Project[] = [
     imagePreview: wexpensesMockup,
   },
   {
-    id: 5,
+    id: 6,
     title: "Trivia Challenger",
     description:
       "Jogo de perguntas e respostas, onde o usuário pode responder perguntas de múltipla escolha. O projeto foi desenvolvido durante o curso da Trybe.",
