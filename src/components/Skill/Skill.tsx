@@ -22,6 +22,7 @@ import {
   SiVite,
   SiInsomnia,
   SiMysql,
+  SiSpringboot,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { DiSass, DiPhotoshop, DiIllustrator } from "react-icons/di";
@@ -49,7 +50,8 @@ export type TechName =
   | "Linkedin"
   | "Whatsapp"
   | "Java"
-  | "MySQL";
+  | "MySQL"
+  | "SpringBoot";
 
 const iconMap: Record<TechName, IconType> = {
   JavaScript: SiJavascript,
@@ -75,6 +77,7 @@ const iconMap: Record<TechName, IconType> = {
   Whatsapp: FaWhatsapp,
   Java: FaJava,
   MySQL: SiMysql,
+  SpringBoot: SiSpringboot,
 };
 
 interface TechIconProps {
